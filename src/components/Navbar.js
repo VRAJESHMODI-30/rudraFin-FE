@@ -2,11 +2,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css"; // Import the CSS file
+import Dropdown from "./Dropdown";
 
-const Navbar = () => {
+const Navbar = (props) => {
   /**
    * Mobile nav toggle
    */
+  const productDropdownArray = [
+    "Product 1",
+    "Product 2",
+    ["subProduct Heading", "subProduct 1","subProduct 2"]
+  ];
+  // cost productDropdownArray = props.productsArray;
   const mobileNav = () => {
     let navbar = document.getElementById("navbar");
     navbar.classList.toggle("navbar-mobile");
@@ -15,12 +22,12 @@ const Navbar = () => {
     selectEle.classList.toggle("bi-x");
   };
 
-  const scrollToTop = ()=> {
+  const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth' // Optional: Adds smooth scrolling animation
+      behavior: "smooth", // Optional: Adds smooth scrolling animation
     });
-  }
+  };
 
   //Too ExitNavBar if in MobileView
   const exitNavbar = () => {
@@ -63,7 +70,7 @@ const Navbar = () => {
   };
 
   // Use the currentLocation prop to determine active navigation item
-  const isActive = (path) => path === '/';
+  const isActive = (path) => path === "/";
   return (
     <>
       {/* Top Bar */}
@@ -128,14 +135,12 @@ const Navbar = () => {
                   About
                 </Link>
               </li>
-              {/* <li><Link className="nav-link scrollto" to="#services">Services</Link></li>
-            <li><Link className="nav-link scrollto" to="#departments">Departments</Link></li>
-            <li><Link className="nav-link scrollto" to="#doctors">Doctors</Link></li> */}
+
               <li className="dropdown">
                 <a href="#" onClick={(e) => handleNavDropDown(e)}>
                   <span>Products</span> <i className="bi bi-chevron-down"></i>
                 </a>
-                <ul>
+                {/* <ul>
                   <li>
                     <Link to="#" onClick={exitNavbar}>Drop Down 1</Link>
                   </li>
@@ -156,15 +161,23 @@ const Navbar = () => {
                   <li>
                     <Link to="#" onClick={exitNavbar}>Drop Down 2</Link>
                   </li>
+                </ul> */}
+                <ul>
+                  {productDropdownArray.map((ele) => {
+                    return <Dropdown element={ele} />;
+                  })}
                 </ul>
               </li>
-              {/* <li><Link className="nav-link scrollto" to="#contact">Contact</Link></li> */}
             </ul>
             <i className="bi bi-list mobile-nav-toggle" onClick={mobileNav}></i>
           </nav>
 
           <b>
-            <Link to="/partner" className="appointment-btn scrollto" onClick={scrollToTop}>
+            <Link
+              to="/partner"
+              className="appointment-btn scrollto"
+              onClick={scrollToTop}
+            >
               <span className="d-none d-md-inline">Become Our</span> Partner
             </Link>
           </b>

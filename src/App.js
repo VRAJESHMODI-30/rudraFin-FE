@@ -103,9 +103,10 @@ function App() {
   }, []);
 
   // Calculate the padding for the content based on the Navbar height
-  const contentPadding =`${navbarHeight+10}px`; // Replace with your desired padding value
+  const contentPadding =`${navbarHeight+40}px`; // Replace with your desired padding value
 
   return (
+  //  <Products/>
     <Router>
       {/* Conditionally render the preloader based on the contentLoaded state */}
       {!contentLoaded ? (
@@ -116,12 +117,13 @@ function App() {
         </div>
       ) : null}
 
-      <Navbar id="header" currentLocation="/" />
+      <Navbar id="header" currentLocation="/" productsArray="" />
       <div id="mainContent" style={{ paddingTop: contentPadding }}>
         <Routes>
           <Route path="/" element={<Home />} />
+          {/* <Route path="/" element={<Products />} /> */}
           <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products />} />
+          <Route path="/product_1" element={<Products />} />
           <Route path="/partner" element={<Partner />} />
         </Routes>
       </div>

@@ -18,9 +18,9 @@
                 "additionalDetails": false,
                 "BasicInfo": [
                     "At Rudraa Finance Services, we understand that securing a housing loan is a significant milestone on the journey to achieving your dream home. We take pride in offering a diverse range of home loan options that are not only tailored to your specific needs but also come with some of the most competitive interest rates in the market.",
-                    "Tailored Solutions: Our housing loan solutions are designed to accommodate a wide customer base, including salaried individuals, self-employed professionals, and NRIs, among others.",
-                    "Customization: We believe in customization, ensuring that our products are perfectly aligned with your unique home loan eligibility.",
-                    "Your dream home is within reach, and at Rudraa Finance Services, we are here to make it a reality."
+                    "@list@Tailored Solutions: Our housing loan solutions are designed to accommodate a wide customer base, including salaried individuals, self-employed professionals, and NRIs, among others.",
+                    "@list@Customization: We believe in customization, ensuring that our products are perfectly aligned with your unique home loan eligibility.",
+                    "@italic@Your dream home is within reach, and at Rudraa Finance Services, we are here to make it a reality."
                 ],
                 "RequiredDocuments": [
                     {
@@ -47,14 +47,22 @@
                     }
                 ],
                 "keyFeatures": [
-                    "Online Home loan sanction facility",
-                    "Quick sanction and low EMI",
-                    "Simple documentation",
-                    "Maximum Tenure of 30 years or attainment of 60 years whichever is earlier",
-                    "Amongst the lowest rate of interest",
+                    "fas fa-store",
+                    "Online Home Loan Sanction",
+                    "fas fa-money-bill",
+                    "Quick Sanction and Low EMI",
+                    "fas fa-file-alt",
+                    "Simple Documentation",
+                    "fas fa-clock",
+                    "Maximum Tenure",
+                    "fas fa-trophy",
+                    "Competitive Interest Rates",
+                    "fas fa-rupee-sign",
                     "No Prepayment Penalty",
-                    "Available for construction / purchase of house or flat from private developer or housing        boards and repairs/renovation to the existing properties",
-                    "Takeover or balance transfer of existing Home Loans Possible"
+                    "fas fa-cogs",
+                    "Versatile Usage",
+                    "fas fa-exchange-alt",
+                    "Takeover or Balance Transfer"
                 ],
                 "repaymentArray": [
                     {

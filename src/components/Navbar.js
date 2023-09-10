@@ -5,15 +5,15 @@ import "../styles/Navbar.css"; // Import the CSS file
 import Dropdown from "./Dropdown";
 
 const Navbar = (props) => {
+  console.log("Vrajesh LOOK HERE -> ", props.productsArray);
   /**
    * Mobile nav toggle
    */
   const productDropdownArray = [
     "Product 1",
     "Product 2",
-    ["subProduct Heading", "subProduct 1","subProduct 2"]
+    ["subProduct Heading", "subProduct 1", "subProduct 2"],
   ];
-  // cost productDropdownArray = props.productsArray;
   const mobileNav = () => {
     let navbar = document.getElementById("navbar");
     navbar.classList.toggle("navbar-mobile");
@@ -43,15 +43,15 @@ const Navbar = (props) => {
    * Mobile nav dropdowns activate
    */
   const handleNavDropDown = (e) => {
+    e.preventDefault();
     let navbar = document.getElementById("navbar");
     let selectedElement = document.querySelector(".navbar .dropdown > a");
-    console.log("OK", selectedElement);
-    console.log("look here", selectedElement.nextElementSibling);
+
     if (navbar.classList.contains("navbar-mobile")) {
       e.preventDefault();
       selectedElement.nextElementSibling.classList.toggle("dropdown-active");
     }
-    console.log("look here After", selectedElement.nextElementSibling);
+
     // return true;
   };
   const handleNavDeepDropDown = (e) => {
@@ -70,7 +70,16 @@ const Navbar = (props) => {
   };
 
   // Use the currentLocation prop to determine active navigation item
-  const isActive = (path) => path === "/";
+  const isActive = (path) => {
+    if (
+      path === props.currentLocation ||
+      (path === "/product" && props.currentLocation.search(/product/) !== -1)
+    ) {
+      return true;
+    } else {
+      return false;
+    }
+  };
   return (
     <>
       {/* Top Bar */}
@@ -137,34 +146,18 @@ const Navbar = (props) => {
               </li>
 
               <li className="dropdown">
-                <a href="#" onClick={(e) => handleNavDropDown(e)}>
+                <a
+                  onClick={(e) => handleNavDropDown(e)}
+                  className={`nav-link scrollto ${
+                    isActive("/product") ? "active" : ""
+                  }`}
+                  style={{ cursor: "default" }}
+                >
                   <span>Products</span> <i className="bi bi-chevron-down"></i>
                 </a>
-                {/* <ul>
-                  <li>
-                    <Link to="#" onClick={exitNavbar}>Drop Down 1</Link>
-                  </li>
-                  <li className="dropdown">
-                    <a href="#" onClick={(e) => handleNavDeepDropDown(e)}>
-                      <span>Deep Drop Down</span>{" "}
-                      <i className="bi bi-chevron-right"></i>
-                    </a>
-                    <ul>
-                      <li>
-                        <Link to="#" onClick={exitNavbar}>Deep Drop Down 1</Link>
-                      </li>
-                      <li>
-                        <Link to="#" onClick={exitNavbar}>Deep Drop Down 2</Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <Link to="#" onClick={exitNavbar}>Drop Down 2</Link>
-                  </li>
-                </ul> */}
                 <ul>
-                  {productDropdownArray.map((ele) => {
-                    return <Dropdown element={ele} />;
+                  {props.productsArray.map((ele, idx) => {
+                    return <Dropdown key={idx} element={ele} />;
                   })}
                 </ul>
               </li>

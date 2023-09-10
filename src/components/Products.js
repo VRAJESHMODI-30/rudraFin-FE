@@ -1,48 +1,102 @@
 import React, { useState, useEffect } from "react";
 import "../styles/Products.css";
 
-function Products() {
-  return (
+function Products(props) {
+  const goBack = () => {
+    window.history.back();
+  };
+
+  return props.product === undefined || props.product === null ? (
+    <div
+      style={{
+        fontFamily: "Arial, sans-serif",
+        backgroundColor: "#f0f0f0",
+        textAlign: "center",
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <h1
+        style={{
+          fontSize: "8rem",
+          margin: "0",
+          color: "#e74c3c",
+          cursor: "pointer",
+        }}
+        onClick={goBack}
+      >
+        404
+      </h1>
+      <p
+        style={{
+          fontSize: "1.5rem",
+          margin: "1rem 0",
+        }}
+      >
+        Page Not Found
+      </p>
+      <button
+        style={{
+          backgroundColor: "#3498db",
+          color: "#fff",
+          padding: "10px 20px",
+          fontSize: "1.2rem",
+          border: "none",
+          borderRadius: "5px",
+          cursor: "pointer",
+          outline: "none",
+        }}
+        onClick={goBack}
+      >
+        Go Back
+      </button>
+    </div>
+  ) : (
     <>
       {/* <!-- ======= Introduction/About Us Section ======= --> */}
       <section id="about-us" class="about-us">
         <div class="container" data-aos="fade-up">
           <div class="row content">
             <div class="col-lg-6" data-aos="fade-right">
-              <h2>Why Opt for Rudraa Finance Home Loans?</h2>
-              <h3>
-                Discover the compelling reasons to choose Rudraa Finance when it
-                comes to securing a home loan.
-              </h3>
+              <h2>{props.product.MainHead}</h2>
+              <h3>{props.product.SubHead}</h3>
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
-              <p>
-                At Rudraa Finance Services, we understand that securing a
-                housing loan is a significant milestone on the journey to
-                achieving your dream home. We take pride in offering a diverse
-                range of home loan options that are not only tailored to your
-                specific needs but also come with some of the most competitive
-                interest rates in the market.
-              </p>
-              <ul>
-                <li>
-                  <i class="ri-check-double-line"></i>{" "}
-                  <strong>Tailored Solutions:</strong> Our housing loan
-                  solutions are designed to accommodate a wide customer base,
-                  including salaried individuals, self-employed professionals,
-                  and NRIs, among others.
-                </li>
-                <li>
-                  <i class="ri-check-double-line"></i>{" "}
-                  <strong> Customization:</strong> We believe in customization,
-                  ensuring that our products are perfectly aligned with your
-                  unique home loan eligibility.
-                </li>
-              </ul>
-              <p class="fst-italic">
-                Your dream home is within reach, and at Rudraa Finance Services,
-                we are here to make it a reality.
-              </p>
+              {props.product.BasicInfo.map((data, idx) => {
+                if (data.search(/\@list\@/) !== -1) {
+                  return (
+                    <ul>
+                      <li>
+                        <i class="ri-check-double-line"></i>{" "}
+                        <strong>
+                          {data
+                            .replace(/\@list\@/, "")
+                            .substring(
+                              0,
+                              data.replace(/\@list\@/, "").indexOf(":") + 1
+                            )}
+                        </strong>
+                        {data
+                          .replace(/\@list\@/, "")
+                          .substring(
+                            data.replace(/\@list\@/, "").indexOf(":") + 1
+                          )}
+                      </li>
+                    </ul>
+                  );
+                } else if (data.search(/\@italic\@/) !== -1) {
+                  return (
+                    <p class="fst-italic" key={idx}>
+                      {data.replace(/\@italic\@/, "")}
+                    </p>
+                  );
+                } else {
+                  return <p key={idx}>{data}</p>;
+                }
+              })}
             </div>
           </div>
         </div>
@@ -187,199 +241,137 @@ function Products() {
       <section id="features" class="features">
         <div class="container" data-aos="fade-up">
           <div class="section-title">
-            <h2>Features</h2>
+            <h2>Key Features</h2>
             <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+              These key features encompass some of the fundamental aspects to
+              consider when evaluating financial services.
             </p>
           </div>
 
           <div class="row">
-            <div class="col-lg-3 col-md-4">
-              <div class="icon-box">
-                <i class="ri-store-line" style={{ color: "#ffbb2c" }}></i>
-                <h3>
-                  Online home loan approval process
-                </h3>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-              <div class="icon-box">
-                <i
-                  class="ri-bar-chart-box-line"
-                  style={{ color: "#5578ff" }}
-                ></i>
-                <h3>
-                  Expedited approval with affordable EMIs
-                </h3>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-              <div class="icon-box">
-                <i
-                  class="ri-calendar-todo-line"
-                  style={{ color: "#e80368" }}
-                ></i>
-                <h3>
-                  Streamlined documentation requirements
-                </h3>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-              <div class="icon-box">
-                <i class="ri-paint-brush-line" style={{ color: "#e361ff" }}></i>
-                <h3>
-                  
-                    {" "}
-                    Maximum tenure of 30 years or until the age of 60, whichever
-                    comes earlier
-                  
-                </h3>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 mt-4">
-              <div class="icon-box">
-                <i class="ri-database-2-line" style={{ color: "#47aeff;" }}></i>
-                <h3>
-                  Highly competitive and flexible interest rates
-                </h3>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 mt-4">
-              <div class="icon-box">
-                <i class="ri-gradienter-line" style={{ color: "#ffa76e" }}></i>
-                <h3>
-                  No prepayment penalty
-                </h3>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 mt-4">
-              <div class="icon-box">
-                <i class="ri-file-list-3-line" style={{ color: "#11dbcf" }}></i>
-                <h3>
-                  
-                    Applicable for property construction, purchase, or
-                    repairs/renovation
-                  
-                </h3>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-4 mt-4">
-              <div class="icon-box">
-                <i class="ri-price-tag-2-line" style={{ color: "#4233ff" }}></i>
-                <h3>
-                  Option for loan takeover or balance transfer
-                </h3>
-              </div>
-            </div>
+            {props.product.keyFeatures.map((data, idx) => {
+              if (idx % 2 !== 0) {
+                // Check if the index is odd
+                return (
+                  <div class="col-lg-3 col-md-4 mt-4" key={idx}>
+                    <div class="icon-box">
+                      <i
+                        class={props.product.keyFeatures[idx - 1]}
+                        style={{ color: "#1977cc" }}
+                      ></i>
+                      <h3>{data}</h3>
+                    </div>
+                  </div>
+                );
+              }
+              return null; // Return null for even indices to skip them
+            })}
           </div>
         </div>
       </section>
-      
+
       {/* <!-- ======= Maximum Loan Amount and Repayment Period ======= --> */}
-      <div className="section-title" id="backBlue">
-        <h2 className="h2Class">Maximum Loan Amount and Repayment Period</h2>
-        <table
-          className="table-bordered"
-          style={{ width: "80%", margin: "auto" }}
-        >
-          <thead>
-            <tr>
-              <th>Property Cost</th>
-              <th>Maximum Loan Amount</th>
-              <th>Maximum Repayment Period</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Up to Rs. 30 lakh</td>
-              <td>90% of Property value</td>
-              <td>Maximum 30 years for salaried individuals</td>
-            </tr>
-            <tr>
-              <td>More than Rs. 30 lakh and up to Rs. 75 lakh</td>
-              <td>80% of Property value</td>
-              <td>Maximum 25 years for self-employed professionals</td>
-            </tr>
-            <tr>
-              <td>Above Rs. 75 lakh</td>
-              <td>75% of Property value</td>
-              <td>-</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      {props.product.repayment ? (
+        <div className="section-title" id="backBlue">
+          <h2 className="h2Class">Maximum Loan Amount and Repayment Period</h2>
+          <table
+            className="table-bordered"
+            style={{ width: "80%", margin: "auto" }}
+          >
+            <thead>
+              <tr>
+                <th>Property Cost</th>
+                <th>Maximum Loan Amount</th>
+                <th>Maximum Repayment Period</th>
+              </tr>
+            </thead>
+            <tbody>
+              {props.product.repaymentArray.map((data, idx) => {
+                return (
+                  <tr key={idx}>
+                    <td>{data.cost}</td>
+                    <td>{data.amount}</td>
+                    <td>{data.period}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      ) : null}
 
       {/* <!-- ======= Frequently Asked Questions Section ======= --> */}
-    <section id="faq" class="faq">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="content px-xl-5">
-              <h3>Additional Details & <strong>Requirements</strong></h3>
-              <p>
-              These are extra pieces of information requested during a financial application process. For instance, when applying for a loan, you may be asked to provide documents such as pay stubs, bank statements, or proof of residence. These additional details are essential as they enable the financial institution to gain a deeper understanding of your financial situation.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-8">
-
-            <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
-
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
-                    <span class="num">1.</span>
-                    Non consectetur a erat nam at lectus urna duis?
-                  </button>
-                </h3>
-                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                  <ul className="docfeatures">
-                        <li>
-                          <i className="fas fa-check"></i> PAN Card
-                        </li>
-                        <li>
-                          <i className="fas fa-check"></i> Aadhaar Card
-                        </li>
-                        <li>
-                          <i className="fas fa-check"></i> Passport (for NRIs)
-                        </li>
-                        <li>
-                          <i className="fas fa-check"></i>Proof of residence
-                        </li>
-                      </ul>
-                  </div>
+      {props.product.additionalDetails ? (
+        <section id="faq" class="faq">
+          <div class="container" data-aos="fade-up">
+            <div class="row gy-4">
+              <div class="col-lg-4">
+                <div class="content px-xl-5">
+                  <h3>
+                    Additional Details & <strong>Requirements</strong>
+                  </h3>
+                  <p>
+                    These are extra pieces of information requested during a
+                    financial application process. For instance, when applying
+                    for a loan, you may be asked to provide documents such as
+                    pay stubs, bank statements, or proof of residence. These
+                    additional details are essential as they enable the
+                    financial institution to gain a deeper understanding of your
+                    financial situation.
+                  </p>
                 </div>
               </div>
 
-              <div class="accordion-item">
-                <h3 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
-                    <span class="num">2.</span>
-                    Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
-                  </button>
-                </h3>
-                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
-                  <div class="accordion-body">
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                  </div>
+              <div class="col-lg-8">
+                <div
+                  class="accordion accordion-flush"
+                  id="faqlist"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  {props.product.additionalDetailsArray.map((dataObj, idx) => {
+                    const collapseId = `faq-content-${idx}`; // Create a unique ID for each accordion
+
+                    return (
+                      <div key={idx} class="accordion-item">
+                        <h3 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target={`#${collapseId}`} // Use the unique ID as data-bs-target
+                          >
+                            <span class="num">{idx + 1}.</span>
+                            {dataObj.heading}
+                          </button>
+                        </h3>
+                        <div
+                          id={collapseId} // Set the ID of the collapsible content
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#faqlist"
+                        >
+                          <div class="accordion-body">
+                            <ul className="docfeatures">
+                              {dataObj.detail.map((data, idx) => {
+                                return (
+                                  <li key={idx}>
+                                    <i className="fas fa-check"></i>
+                                    {data}
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
-
             </div>
-
           </div>
-        </div>
-
-      </div>
-    </section>
-
+        </section>
+      ) : null}
     </>
   );
 }

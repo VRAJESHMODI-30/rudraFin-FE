@@ -5,12 +5,11 @@ import { Link } from "react-router-dom";
 function Dropdownheading(props) {
   // console.log("in dropdownheading",props);
   const handleNavDeepDropDown = (e) => {
+    e.preventDefault();
     let navbar = document.getElementById("navbar");
     let selectedElement = document.querySelector(
       ".navbar .dropdown ul .dropdown > a"
     );
-    console.log("OK", selectedElement);
-    console.log("look here", selectedElement.nextElementSibling);
     if (navbar.classList.contains("navbar-mobile")) {
       e.preventDefault();
       selectedElement.nextElementSibling.classList.toggle("dropdown-active");
@@ -20,12 +19,12 @@ function Dropdownheading(props) {
   };
   return (
     <li className="dropdown">
-      <a href="#" onClick={(e) => handleNavDeepDropDown(e)}>
+      <a onClick={(e) => handleNavDeepDropDown(e)} style={{cursor:'default'}}>
         <span>{props.heading}</span> <i className="bi bi-chevron-right"></i>
       </a>
       <ul>
-        {props.EleArray.map((ele) => {
-          return <Dropdown element={ele} />;
+        {props.EleArray.map((ele,idx) => {
+          return <Dropdown key={idx} element={ele} />;
         })}
       </ul>
     </li>

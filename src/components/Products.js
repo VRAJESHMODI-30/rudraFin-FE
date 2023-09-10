@@ -311,6 +311,75 @@ function Products() {
           </tbody>
         </table>
       </div>
+
+      {/* <!-- ======= Frequently Asked Questions Section ======= --> */}
+    <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="content px-xl-5">
+              <h3>Additional Details & <strong>Requirements</strong></h3>
+              <p>
+              These are extra pieces of information requested during a financial application process. For instance, when applying for a loan, you may be asked to provide documents such as pay stubs, bank statements, or proof of residence. These additional details are essential as they enable the financial institution to gain a deeper understanding of your financial situation.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+
+            <div class="accordion accordion-flush" id="faqlist" data-aos="fade-up" data-aos-delay="100">
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-1">
+                    <span class="num">1.</span>
+                    Non consectetur a erat nam at lectus urna duis?
+                  </button>
+                </h3>
+                <div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                  <ul className="docfeatures">
+                        <li>
+                          <i className="fas fa-check"></i> PAN Card
+                        </li>
+                        <li>
+                          <i className="fas fa-check"></i> Aadhaar Card
+                        </li>
+                        <li>
+                          <i className="fas fa-check"></i> Passport (for NRIs)
+                        </li>
+                        <li>
+                          <i className="fas fa-check"></i>Proof of residence
+                        </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-content-2">
+                    <span class="num">2.</span>
+                    Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                  </button>
+                </h3>
+                <div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     </>
   );
 }

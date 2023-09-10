@@ -23,7 +23,7 @@ function Dropdown(props) {
       {!Array.isArray(props.element) ? (
         <li>
           <Link
-            to={"/product/" + props.element.replace(/\s/g, "_")}
+            to={"/" + props.element.replace(/\s/g, "_")}
             onClick={exitNavbar}
           >
             {props.element}

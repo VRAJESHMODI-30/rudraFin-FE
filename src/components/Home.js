@@ -85,9 +85,9 @@ const Home = () => {
             We are a Team of Financial Experts Crafting Prosperity with
             Precision.
           </h2>
-          <Link to="/product_1" className="btn-get-started scrollto">
+          <a href="#services" className="btn-get-started scrollto">
             Get Started
-          </Link>
+          </a>
         </div>
       </section>
 

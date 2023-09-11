@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "../styles/Products.css";
 
 function Products(props) {
+
+ console.log('LOOK THIS ',props.product);
   const goBack = () => {
     window.history.back();
   };
@@ -373,6 +375,7 @@ function Products(props) {
         </section>
       ) : null}
     </>
+    // <div>HELLO</div>
   );
 }
 

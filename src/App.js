@@ -10,7 +10,7 @@ import Products from "./components/Products";
 import Partner from "./components/Partner";
 import "./App.css"; // Import the CSS file
 import Footer from "./components/Footer";
-import productData from "./db/product-details.json"
+import productData from "./db/product-details.json";
 
 // function App() {
 //    // State to hold the Navbar height
@@ -67,7 +67,6 @@ import productData from "./db/product-details.json"
 // export default App;
 
 function App() {
-  
   const testProductData = {
     MainHead: "WHY OPT FOR RUDRAA FINANCE HOME LOANS?",
     SubHead:
@@ -160,6 +159,8 @@ function App() {
   const [navbarHeight, setNavbarHeight] = useState(0);
   const [contentLoaded, setContentLoaded] = useState(false);
   const [productTitles, setProductTitles] = useState([]);
+  const [footerProductList, setFooterProductList] = useState([]);
+  const [randomNumberArr, setRandomNumberArr] = useState([]);
   const location = useLocation();
   const calculateNavbarHeight = () => {
     const navbar = document.getElementById("header"); // Replace with your actual Navbar ID
@@ -170,11 +171,56 @@ function App() {
 
   const handleProductTitles = () => {
     let tempArr = [];
-    productData.map((dataObj)=>{
+    let footerTempArr = [];
+    productData.map((dataObj) => {
       tempArr.push(dataObj.NavbarDetails);
+      if (Array.isArray(dataObj.NavbarDetails)) {
+        footerTempArr = footerTempArr.concat(dataObj.NavbarDetails.slice(1));
+        console.log(footerTempArr);
+      } else {
+        footerTempArr.push(dataObj.NavbarDetails);
+      }
     });
     setProductTitles(tempArr);
-  }
+    setFooterProductList(footerTempArr);
+    let randNumArr = generateRandomArray(footerTempArr.length - 1);
+    setRandomNumberArr(randNumArr);
+  };
+
+  const getRequiredProductData = (path) => {
+    let modifiedPath = path.substring(1);
+    let productContent = null; // Initialize productContent to null
+
+    productData.some((dataObj) => {
+      if (dataObj.Product_details.hasOwnProperty(modifiedPath)) {
+        productContent = dataObj.Product_details[modifiedPath];
+        return true; // Stop iterating once the data is found
+      }
+      return false;
+    });
+
+    return productContent;
+  };
+
+  const generateRandomArray = (maxValue) => {
+    if (maxValue < 4) {
+      throw new Error("maxValue must be greater than or equal to 4");
+    }
+
+    const randomArray = [];
+    const allPossibleNumbers = Array.from(
+      { length: maxValue },
+      (_, index) => index
+    );
+
+    for (let i = 0; i < 4; i++) {
+      const randomIndex = Math.floor(Math.random() * allPossibleNumbers.length);
+      const randomValue = allPossibleNumbers.splice(randomIndex, 1)[0];
+      randomArray.push(randomValue);
+    }
+
+    return randomArray;
+  };
 
   useEffect(() => {
     const simulateAssetLoading = () => {
@@ -185,7 +231,7 @@ function App() {
     simulateAssetLoading();
     calculateNavbarHeight();
     handleProductTitles();
-    
+
     // You may want to recalculate the height on window resize
     window.addEventListener("resize", calculateNavbarHeight);
 
@@ -199,27 +245,36 @@ function App() {
 
   // Calculate the padding for the content based on the Navbar height
   const contentPadding = `${navbarHeight + 40}px`; // Replace with your desired padding value
-  
+
   return (
     <>
-    {/* <Router> */}
+      {/* <Router> */}
       {!contentLoaded ? <div id="preloader"></div> : null}
 
-      <Navbar id="header" currentLocation={location.pathname} productsArray={productTitles} />
+      <Navbar
+        id="header"
+        currentLocation={location.pathname}
+        productsArray={productTitles}
+      />
       <div id="mainContent" style={{ paddingTop: contentPadding }}>
         <Routes>
           <Route path="/" element={<Home />} />
           {/* <Route path="/" element={<Products />} /> */}
           <Route path="/about" element={<About />} />
           <Route
-            path="/product_1"
-            element={<Products product={testProductData} />}
+            path="/:type"
+            element={
+              <Products
+                product={getRequiredProductData(location.pathname)}
+                path={location.pathname}
+              />
+            }
           />
           <Route path="/partner" element={<Partner />} />
         </Routes>
       </div>
-      <Footer />
-     {/* </Router> */}
+      <Footer productsArray={footerProductList} randomNum={randomNumberArr} />
+      {/* </Router> */}
     </>
   );
 }

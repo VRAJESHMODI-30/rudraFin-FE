@@ -2,7 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Footer.css";
 
-function Footer() {
+function Footer(props) {
+  console.log("FOOTER 1 ", props.productsArray);
+  console.log("FOOTER 2 ", props.randomNum);
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -62,30 +64,20 @@ function Footer() {
             <div className="col-lg-3 col-md-6 footer-links">
               <h4>Product Offering</h4>
               <ul>
-                <li>
-                  <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="#" onClick={scrollToTop}>
-                    Product 1
-                  </Link>
-                </li>
-                <li>
-                  <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="#" onClick={scrollToTop}>
-                    Product 2
-                  </Link>
-                </li>
-                <li>
-                  <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="#" onClick={scrollToTop}>
-                    Product 3
-                  </Link>
-                </li>
-                <li>
-                  <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="#" onClick={scrollToTop}>
-                    Product 4
-                  </Link>
-                </li>
+                {props.randomNum.map((data) => {
+                  return (
+                    <li>
+                      <i className="bx bx-chevron-right"></i>{" "}
+                      <Link
+                        to={`/${props.productsArray[data].replace(/\s/g, "_")}`}
+                        onClick={scrollToTop}
+                      >
+                        {props.productsArray[data]}
+                      </Link>
+                    </li>
+                  );
+                })}
+
                 {/* <li><i className="bx bx-chevron-right"></i> <Link to="#">Product 1</Link></li> */}
               </ul>
             </div>

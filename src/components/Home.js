@@ -50,37 +50,37 @@ const Home = () => {
   // }, []);
 
   useEffect(() => {
-    new Swiper('.testimonials-slider', {
+    new Swiper(".testimonials-slider", {
       // Swiper configuration options
       speed: 600,
       loop: true,
       autoplay: {
         delay: 5000,
-        disableOnInteraction: false
+        disableOnInteraction: false,
       },
-      slidesPerView: 'auto',
+      slidesPerView: "auto",
       pagination: {
-        el: '.swiper-pagination',
-        type: 'bullets',
-        clickable: true
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
       },
       breakpoints: {
         320: {
           slidesPerView: 1,
-          spaceBetween: 20
+          spaceBetween: 20,
         },
         1200: {
           slidesPerView: 2,
-          spaceBetween: 20
-        }
-      }
+          spaceBetween: 20,
+        },
+      },
     });
   }, []);
   return (
     <>
       <section id="hero" className="d-flex align-items-center">
         <div className="container">
-          <h1>Welcome to Rudraa Finance</h1>
+          <h1>Welcome to Rudraa FinServ Pvt. Ltd.</h1>
           <h2>
             We are a Team of Financial Experts Crafting Prosperity with
             Precision.
@@ -99,11 +99,12 @@ const Home = () => {
               <div className="content">
                 <h3>Why Partner with Us?</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Duis aute irure dolor in reprehenderit Asperiores dolores sed
-                  et. Tenetur quia eos. Autem tempore quibusdam vel
-                  necessitatibus optio ad corporis.
+                  At Rudraa Finserve Pvt. Ltd., we understand the challenges of
+                  making significant financial decisions. That's why we're here
+                  not only to assist you but also to empower you with the
+                  knowledge and expertise required to secure your financial
+                  future. Choose us as your trusted financial partner for peace
+                  of mind and confidence in your financial choices.
                 </p>
                 <div className="text-center">
                   <Link to="/about" className="more-btn">
@@ -117,31 +118,37 @@ const Home = () => {
                 <div className="row">
                   <div className="col-xl-4 d-flex align-items-stretch">
                     <div className="icon-box mt-4 mt-xl-0">
-                      <i className="bx bx-receipt"></i>
-                      <h4>Corporis voluptates sit</h4>
+                      <i className="fas fa-chart-line"></i>
+                      <h4>Expertise and Professionalism</h4>
                       <p>
-                        Consequuntur sunt aut quasi enim aliquam quae harum
-                        pariatur laboris nisi ut aliquip
+                        Choose Rudraa Finserve Pvt. Ltd. to partner with
+                        experienced professionals who offer insightful advice,
+                        personalized solutions, and a clear roadmap for your
+                        financial goals.
                       </p>
                     </div>
                   </div>
                   <div className="col-xl-4 d-flex align-items-stretch">
                     <div className="icon-box mt-4 mt-xl-0">
-                      <i className="bx bx-cube-alt"></i>
-                      <h4>Ullamco laboris ladore pan</h4>
+                      <i className="fas fa-shield-alt"></i>
+                      <h4>Trustworthy Guidance</h4>
                       <p>
-                        Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt
+                        Choose us as your financial partner, where trust and
+                        your well-being come first. We're committed to
+                        transparency, ethics, and supporting you throughout your
+                        financial journey.
                       </p>
                     </div>
                   </div>
                   <div className="col-xl-4 d-flex align-items-stretch">
                     <div className="icon-box mt-4 mt-xl-0">
-                      <i className="bx bx-images"></i>
-                      <h4>Labore consequatur</h4>
+                      <i className="fas fa-handshake"></i>
+                      <h4>Client-Centric Approach</h4>
                       <p>
-                        Aut suscipit aut cum nemo deleniti aut omnis. Doloribus
-                        ut maiores omnis facere
+                        Choose Rudraa Finserve Pvt. Ltd. where you're a valued
+                        community member, not just a number. Our dedicated
+                        advisors empower you with informed financial decisions,
+                        ensuring your plan adapts to your evolving needs.
                       </p>
                     </div>
                   </div>
@@ -160,10 +167,11 @@ const Home = () => {
           <div className="section-title">
             <h2>Services</h2>
             <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+              In the intricate world of finance, Rudraa Finserve Pvt. Ltd. stands as
+              your beacon of trust and expertise. Our tailored solutions,
+              commitment to your financial well-being, and dedication to
+              simplifying complexity make us your ideal partner on the path to
+              lasting financial success.
             </p>
           </div>
 
@@ -171,14 +179,14 @@ const Home = () => {
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
               <div className="icon-box">
                 <div className="icon">
-                  <i className="fa-solid fa-money-bill-trend-up"></i>
+                  <i className="fas fa-hand-holding-usd"></i>
                 </div>
                 <h4>
-                  <Link to="">Lorem Ipsum</Link>
+                  <Link to="">Wealth Management</Link>
                 </h4>
                 <p>
-                  Voluptatum deleniti atque corrupti quos dolores et quas
-                  molestias excepturi
+                  Comprehensive financial planning and investment strategies
+                  tailored to your goals.
                 </p>
               </div>
             </div>
@@ -186,14 +194,14 @@ const Home = () => {
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
               <div className="icon-box">
                 <div className="icon">
-                  <i className="fa-solid fa-money-bill"></i>
+                  <i className="fas fa-coins"></i>
                 </div>
                 <h4>
-                  <Link to="">Sed ut perspiciatis</Link>
+                  <Link to="">Retirement Planning</Link>
                 </h4>
                 <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore
+                  Secure your retirement with personalized savings and
+                  investment strategies.
                 </p>
               </div>
             </div>
@@ -201,14 +209,26 @@ const Home = () => {
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
               <div className="icon-box">
                 <div className="icon">
-                  <i className="fa-solid fa-list-check"></i>
+                  <i className="fas fa-briefcase"></i>
                 </div>
                 <h4>
-                  <Link to="">Magni Dolores</Link>
+                  <Link to="">Investment Advisory</Link>
+                </h4>
+                <p>Expert guidance for making informed investment decisions.</p>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
+              <div className="icon-box">
+                <div className="icon">
+                  <i className="fas fa-calculator"></i>
+                </div>
+                <h4>
+                  <Link to="">Tax Planning</Link>
                 </h4>
                 <p>
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia
+                  Minimize your tax liability with strategic tax planning and
+                  optimization.
                 </p>
               </div>
             </div>
@@ -216,14 +236,14 @@ const Home = () => {
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
               <div className="icon-box">
                 <div className="icon">
-                  <i className="fa-solid fa-credit-card"></i>
+                  <i className="fas fa-home"></i>
                 </div>
                 <h4>
-                  <Link to="">Nemo Enim</Link>
+                  <Link to="">Estate Planning</Link>
                 </h4>
                 <p>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis
+                  Preserve and manage your wealth for future generations with
+                  thoughtful estate planning.
                 </p>
               </div>
             </div>
@@ -231,29 +251,14 @@ const Home = () => {
             <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
               <div className="icon-box">
                 <div className="icon">
-                  <i className="fa-solid fa-piggy-bank"></i>
+                  <i className="fas fa-exclamation-triangle"></i>
                 </div>
                 <h4>
-                  <Link to="">Dele cardo</Link>
+                  <Link to="">Risk Assessment</Link>
                 </h4>
                 <p>
-                  Quis consequatur saepe eligendi voluptatem consequatur dolor
-                  consequuntur
-                </p>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-              <div className="icon-box">
-                <div className="icon">
-                  <i className="fa-solid fa-user-tie"></i>
-                </div>
-                <h4>
-                  <Link to="">Divera don</Link>
-                </h4>
-                <p>
-                  Modi nostrum vel laborum. Porro fugit error sit minus sapiente
-                  sit aspernatur
+                  Identify and mitigate financial risks through thorough risk
+                  assessment.
                 </p>
               </div>
             </div>
@@ -265,7 +270,7 @@ const Home = () => {
       {/* <!-- ======= Testimonials Section ======= --> */}
       <section id="testimonials" className="testimonials">
         <div className="container">
-          <div className={`tultip ${window.screen.width<=768 ? 'ms-5' : ''}`}>
+          <div className={`tultip ${window.screen.width <= 768 ? "ms-5" : ""}`}>
             <i className="far fa-question-circle"></i>
             <span className="tooltip-text">Drag to Change</span>
           </div>
@@ -402,10 +407,7 @@ const Home = () => {
           <div className="section-title">
             <h2>Contact</h2>
             <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+            Our office hours are from Monday to Saturday, 10:00 AM to 7:00 PM. We are here to serve you during these hours, so please feel free to get in touch.
             </p>
           </div>
         </div>
@@ -449,7 +451,7 @@ const Home = () => {
                 <div className="email">
                   <i className="bi bi-envelope"></i>
                   <h4>Email:</h4>
-                  <p>info@example.com</p>
+                  <p>rudraafinservices2022@gmail.com</p>
                 </div>
 
                 <div className="phone">

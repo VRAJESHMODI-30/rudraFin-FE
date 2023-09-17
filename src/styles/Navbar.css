@@ -35,11 +35,12 @@
   }
   
   #topbar .social-links a {
-    color: #437099;
+    color: green;
     padding-left: 15px;
     display: inline-block;
     line-height: 1px;
     transition: 0.3s;
+    font-size:large
   }
   
   #topbar .social-links a:hover {

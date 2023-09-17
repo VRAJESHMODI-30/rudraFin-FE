@@ -182,9 +182,9 @@ section {
 }
 
 .about .video-box {
-  /* background: url("../img/about.jpg") center center no-repeat; */
+  background: url("../../public/assets/img/about-skills.png") center center no-repeat;
   background-size: cover;
-  min-height: 500px;
+  min-height: 300px;
 }
 
 .about .play-btn {
@@ -372,4 +372,36 @@ section {
     color: #fff;
     background: #1977cc;
   }
+}
+
+
+/*--------------------------------------------------------------
+# AboutUs Section
+--------------------------------------------------------------*/
+.aboutus .content h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-primary);
+}
+
+.aboutus .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.aboutus .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.aboutus .content ul strong {
+  margin-right: 10px;
+}
+
+.aboutus .content ul i {
+  font-size: 16px;
+  margin-right: 5px;
+  color: var(--color-primary);
+  line-height: 0;
 }

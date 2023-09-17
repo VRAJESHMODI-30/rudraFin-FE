@@ -5,6 +5,8 @@
         "NavbarDetails": [
             "Housing Loans",
             "Home Loan",
+            "NRI Home Loan",
+            "Pensioners Home Loan",
             "Loan Against Property",
             "Home Construction Loan",
             "Home Extension Loan",
@@ -82,6 +84,160 @@
                     }
                 ]
             },
+            "NRI_Home_Loan": {
+                "MainHead": "WHY OPT FOR RUDRAA FINANCE NRI HOME LOAN?",
+                "SubHead": "Discover the compelling reasons to choose Rudraa Finance when it comes to securing an NRI Home Loan.",
+                "repayment": false,
+                "additionalDetails": true,
+                "BasicInfo": [
+                    "Rudraa Finance Services is dedicated to helping Non-Resident Indians (NRIs) realize their dream of owning a home in India. Our NRI Home Loan is tailored to meet the unique needs of NRIs, providing them with a seamless and convenient way to invest in Indian real estate.",
+                    "@list@Hassle-Free Homeownership: We understand the challenges that NRIs may face when it comes to buying property in India. Our NRI Home Loan simplifies the process, ensuring that you can own your dream home without hassle.",
+                    "@list@Competitive Interest Rates: Rudraa Finance Services offers competitive interest rates to make your NRI Home Loan affordable. We strive to provide financial solutions that align with your budget and requirements.",
+                    "@italic@At Rudraa Finance Services, we are committed to supporting NRIs in their homeownership journey. Our NRI Home Loan is designed to make your dream of owning a home in India a reality. Let us be your financial partner as you invest in your Indian property. Your home in India, powered by Rudraa Finance Services."
+                ],
+                "RequiredDocuments": [
+                    {
+                        "KYC documents": [
+                            "PAN Card",
+                            "Aadhaar Card",
+                            "Passport",
+                            "Proof of residence (in India and abroad)"
+                        ]
+                    },
+                    {
+                        "Income documents": [
+                            "Salary slips and Form No.16 (for salaried NRIs)",
+                            "Bank statements for the last 6 to 12 months (NRE/NRO account)",
+                            "Last 3 years income tax returns (if applicable)"
+                        ]
+                    },
+                    {
+                        "Property Documents (if property is identified)": [
+                            "Proof of ownership of the property",
+                            "Sale agreement",
+                            "Property valuation report",
+                            "Approved building plan"
+                        ]
+                    }
+                ],
+                "keyFeatures": [
+                    "fas fa-home",
+                    "Home Loan for NRIs",
+                    "fas fa-money-bill-wave",
+                    "Loan amount based on property value",
+                    "fas fa-percent",
+                    "Competitive interest rates",
+                    "fas fa-clock",
+                    "Flexible repayment tenure",
+                    "fas fa-check-circle",
+                    "Quick approval process",
+                    "fas fa-money-check-alt",
+                    "Tax benefits",
+                    "fas fa-credit-card",
+                    "Prepayment and foreclosure options",
+                    "fas fa-hand-holding-usd",
+                    "Processing fees and charges",
+                    "fas fa-briefcase",
+                    "End-use flexibility",
+                    "fas fa-balance-scale",
+                    "Transparent eligibility criteria",
+                    "fas fa-file-alt",
+                    "Streamlined documentation",
+                    "fas fa-user-friends",
+                    "Dedicated NRI support team"
+                ],
+                "additionalDetailsArray": [
+                    {
+                        "heading": "Property Usage",
+                        "detail": [
+                            "Residential property purchase",
+                            "Construction of a new home",
+                            "Home renovation or improvement"
+                        ]
+                    },
+                    {
+                        "heading": "Security",
+                        "detail": [
+                            "Registered mortgage of the residential property",
+                            "Demand Promissory Note"
+                        ]
+                    }
+                ]
+            },
+            "Pensioners_Home_Loan": {
+                "MainHead": "WHY OPT FOR RUDRAA FINANCE PENSIONERS HOME LOAN?",
+                "SubHead": "Discover the compelling reasons to choose Rudraa Finance when it comes to securing a Pensioners Home Loan.",
+                "repayment": false,
+                "additionalDetails": true,
+                "BasicInfo": [
+                    "At Rudraa Finance Services, we understand that retirement should be a time to relax and enjoy the comforts of your own home. Our Pensioners Home Loan is designed to make homeownership accessible and stress-free for pensioners and senior citizens.",
+                    "@list@Age No Barrier: We believe that age should not be a barrier to homeownership. Our Pensioners Home Loan is specially crafted to cater to the unique financial needs of pensioners and senior citizens.",
+                    "@list@Competitive Interest Rates: Rudraa Finance Services offers competitive interest rates for Pensioners Home Loans to ensure affordability without compromising on comfort.",
+                    "@italic@At Rudraa Finance Services, we are committed to enhancing the quality of life for pensioners and senior citizens. Our Pensioners Home Loan is a testament to our dedication to providing comfortable and secure living options during your golden years. Let us be your financial partner as you enjoy the comforts of your own home. Your retirement, powered by Rudraa Finance Services."
+                ],
+                "RequiredDocuments": [
+                    {
+                        "KYC documents": [
+                            "PAN Card",
+                            "Aadhaar Card",
+                            "Passport (if applicable)",
+                            "Proof of residence"
+                        ]
+                    },
+                    {
+                        "Income documents": [
+                            "Pension statement",
+                            "Bank statements for the last 6 to 12 months",
+                            "Last 3 years income tax returns (if applicable)"
+                        ]
+                    },
+                    {
+                        "Property Documents (if property is identified)": [
+                            "Proof of ownership of the property",
+                            "Sale agreement",
+                            "Property valuation report",
+                            "Approved building plan"
+                        ]
+                    }
+                ],
+                "keyFeatures": [
+                    "fas fa-home",
+                    "Home Loan for Pensioners",
+                    "fas fa-money-bill-wave",
+                    "Loan amount based on property value",
+                    "fas fa-clock",
+                    "Flexible repayment tenure",
+                    "fas fa-check-circle",
+                    "Quick approval process",
+                    "fas fa-money-check-alt",
+                    "Tax benefits",
+                    "fas fa-credit-card",
+                    "Prepayment and foreclosure options",
+                    "fas fa-hand-holding-usd",
+                    "Processing fees and charges",
+                    "fas fa-balance-scale",
+                    "Transparent eligibility criteria",
+                    "fas fa-file-alt",
+                    "Streamlined documentation"
+                ],
+                "additionalDetailsArray": [
+                    {
+                        "heading": "Property Usage",
+                        "detail": [
+                            "Residential property purchase",
+                            "Construction of a new home",
+                            "Home renovation or improvement"
+                        ]
+                    },
+                    {
+                        "heading": "Security",
+                        "detail": [
+                            "Registered mortgage of the residential property",
+                            "Demand Promissory Note"
+                        ]
+                    }
+                ]
+            },                        
             "Loan_Against_Property": {
                 "MainHead": "WHY OPT FOR RUDRAA FINANCE LAP?",
                 "SubHead": "Discover the compelling reasons to choose Rudraa Finance when it comes to securing a LAP.",
@@ -89,9 +245,10 @@
                 "additionalDetails": true,
                 "BasicInfo": [
                     "Unlock the full potential of your assets with Rudraa Finance Services' Loan Against Property. We understand that sometimes you need financial flexibility, and your property can be your greatest asset. Our Loan Against Property offers you a versatile financing solution with some of the most competitive interest rates available.",
-                    "Whether you're a salaried individual, a self-employed professional, or an NRI, we have tailored solutions to meet your unique needs. Your property can serve as a valuable resource to fund various goals, from business expansion to education expenses, debt consolidation, and more",
-                    "At Rudraa Finance Services, we believe in putting you in control. Our Loan Against Property products are highly customizable to ensure they align perfectly with your eligibility and requirements. So, leverage the power of your property and take a step closer to achieving your financial aspirations with Rudraa Finance Services. Your goals, our solutions – together, we can make it happen."
-                ],
+                    "@list@Tailored Financial Solutions: Whether you're a salaried individual, a self-employed professional, or an NRI, we have tailored solutions to meet your unique needs.",
+                    "@list@Unlock Your Property's Potential: Your property can serve as a valuable resource to fund various goals, from business expansion to education expenses, debt consolidation, and more.",
+                    "@italic@At Rudraa Finance Services, we believe in putting you in control. Our Loan Against Property products are highly customizable to ensure they align perfectly with your eligibility and requirements. So, leverage the power of your property and take a step closer to achieving your financial aspirations with Rudraa Finance Services. Your goals, our solutions – together, we can make it happen."
+                ],                
                 "RequiredDocuments": [
                     {
                         "KYC documents": [
@@ -117,19 +274,31 @@
                     }
                 ],
                 "keyFeatures": [
+                    "fas fa-shield-alt",
                     "Secured Loan",
-                    " Loan amount based on property value",
+                    "fas fa-money-bill-wave",
+                    "Loan amount based on property",
+                    "fas fa-hands-helping",
                     "Various end-use purposes",
+                    "fas fa-clock",
                     "Flexible repayment tenure",
+                    "fas fa-percent",
                     "Fixed or floating interest rates",
-                    "Eligibility criteria based on income and creditworthiness",
+                    "fas fa-user-check",
+                    "Eligibility criteria",
+                    "fas fa-check-circle",
                     "Quick approval process",
-                    "Potential tax benefits",
-                    "Prepayment and foreclosure options",
+                    "fas fa-money-check-alt",
+                    "Tax benefits",
+                    "fas fa-credit-card",
+                    "Prepayment and foreclosure",
+                    "fas fa-home",
                     "Risk to property",
+                    "fas fa-file-alt",
                     "Documentation requirements",
+                    "fas fa-hand-holding-usd",
                     "Processing fees and charges"
-                ],
+                ],                
                 "additionalDetailsArray": [
                     {
                         "heading": "Purpose (Loan against Mortgage of Residential House / Flat)",
@@ -154,9 +323,10 @@
                 "repayment": true,
                 "additionalDetails": false,
                 "BasicInfo": [
-                    "Embarking on the journey to build your dream home is a momentous occasion, and Rudraa Finance Services is here to provide the support you need with our Home Construction Loan. We understand that turning your vision into reality requires not just dreams but also a solid financial foundation. That's why we offer a range of tailored home construction loan options to help you achieve your dream home with ease.",
-                    "Our Home Construction Loans cater to diverse customer profiles, whether you are a salaried professional, a self-employed individual, or an NRI. We recognize that your construction project is unique, and we're here to make sure your financing solution is equally exceptional.",
-                    "At Rudraa Finance Services, we're committed to providing competitive interest rates and flexible terms, ensuring that your home construction journey is as smooth as possible. With our expertise and your vision, we can help you create the perfect space you've always envisioned. Build your future with confidence, powered by Rudraa Finance Services."
+                    "Embarking on the journey to realize your dream home is a momentous occasion, and Rudraa Finance Services is here to provide the unwavering support you require through our Home Construction Loan. We understand that transforming your vision into reality necessitates not just aspirations but also a robust financial foundation. This is why we offer an array of meticulously tailored home construction loan options, ensuring that your path to achieving your dream home is navigated with ease.",
+                    "@list@Tailored Home Construction Loans: Our Home Construction Loans accommodate diverse customer profiles, whether you are a salaried professional, a self-employed individual, or an NRI. We acknowledge that your construction project is unique, and we are dedicated to ensuring that your financing solution is equally exceptional.",
+                    "@list@Competitive Rates and Flexibility: At Rudraa Finance Services, we are unwavering in our commitment to delivering competitive interest rates and flexible terms. This commitment ensures that your home construction journey is as seamless as possible. With our extensive expertise combined with your vision, we can assist you in bringing to life the perfect living space you've always envisioned.",
+                    "@italic@With years of experience and a reputation for trustworthiness, you can have absolute confidence in choosing us as your financial partner for realizing your dream home."
                 ],
                 "RequiredDocuments": [
                     {
@@ -183,12 +353,17 @@
                     }
                 ],
                 "keyFeatures": [
-                    " Online plot loan sanction facility",
+                    "fas fa-store",
+                    "Online plot loan sanction",
+                    "fas fa-money-bill",
                     "Quick sanction and low EMI",
+                    "fas fa-file-alt",
                     "Simple documentation",
+                    "fas fa-percent",
                     "Amongst the lowest rate of interest",
+                    "fas fa-user",
                     "Available for both existing and new customers"
-                ],
+                ],                
                 "repaymentArray": [
                     {
                         "cost": "Up to Rs. 30 lakh",
@@ -214,9 +389,9 @@
                 "additionalDetails": false,
                 "BasicInfo": [
                     "At Rudraa Finance Services, we understand that your home is more than just a structure; it's an evolving space that grows with your needs and aspirations. That's why we offer the Home Extension Loan, designed to facilitate the expansion and transformation of your current living space.",
-                    "Whether you're looking to add an extra room, a cozy backyard deck, or a spacious kitchen, our Home Extension Loan is your ideal financial partner. We appreciate that every home extension project is unique, just like your vision, and our tailored loan options reflect this diversity.",
-                    "Our Home Extension Loans are available to a wide range of customers, including salaried individuals, self-employed professionals, and NRIs. With competitive interest rates and flexible repayment terms, we ensure that your home expansion plans become a reality without causing undue financial stress.",
-                    "At Rudraa Finance Services, we're committed to helping you create the home you've always dreamed of. Let us be a part of your journey as you extend your living space, enhance your lifestyle, and continue building beautiful memories. Your dream home, extended."
+                    "@list@Your Ideal Partner for Home Extension: Whether you're looking to add an extra room, a cozy backyard deck, or a spacious kitchen, our Home Extension Loan is your ideal financial partner. We appreciate that every home extension project is unique, just like your vision, and our tailored loan options reflect this diversity.",
+                    "@list@Available to Diverse Customer Profiles: Our Home Extension Loans are available to a wide range of customers, including salaried individuals, self-employed professionals, and NRIs. With competitive interest rates and flexible repayment terms, we ensure that your home expansion plans become a reality without causing undue financial stress.",
+                    "@italic@At Rudraa Finance Services, we're committed to helping you create the home you've always dreamed of. Let us be a part of your journey as you extend your living space, enhance your lifestyle, and continue building beautiful memories. Your dream home, extended."
                 ],
                 "RequiredDocuments": [
                     {
@@ -243,12 +418,18 @@
                     }
                 ],
                 "keyFeatures": [
+                    "fas fa-store",
                     "Online plot loan sanction facility",
+                    "fas fa-money-bill",
                     "Quick sanction and low EMI",
+                    "fas fa-file-alt",
                     "Simple documentation",
+                    "fas fa-percent",
                     "Amongst the lowest rate of interest",
+                    "fas fa-users",
                     "Available for both existing and new customers"
-                ],
+                ]
+                ,
                 "repaymentArray": [
                     {
                         "cost": "Up to Rs. 30 lakh",
@@ -274,9 +455,9 @@
                 "additionalDetails": true,
                 "BasicInfo": [
                     "Embarking on the journey to secure your own piece of land and create your dream abode begins with Rudraa Finance Services' Plot Loan. We recognize that owning a plot of land is often the first step towards realizing your vision, and we're here to provide the financial support you need to make it happen.",
-                    "Our Plot Loans cater to a diverse range of individuals, whether you're a salaried professional, self-employed, or an NRI. We understand that every plot purchase is unique, and our flexible loan options are tailored to suit your specific requirements.",
-                    "With competitive interest rates and convenient repayment terms, Rudraa Finance Services ensures that your dream of owning a piece of land becomes a reality without overwhelming your finances. We're committed to simplifying the process of securing a plot and building a solid foundation for your future home.",
-                    "At Rudraa Finance Services, we believe in making your dreams a reality, one plot at a time. Let us help you take the first step towards your dream home with our Plot Loan. Your vision, your land, your future, powered by Rudraa Finance Services."
+                    "@list@Diverse Plot Loan Options: Our Plot Loans cater to a diverse range of individuals, whether you're a salaried professional, self-employed, or an NRI. We understand that every plot purchase is unique, and our flexible loan options are tailored to suit your specific requirements.",
+                    "@list@Competitive Rates and Convenience: With competitive interest rates and convenient repayment terms, Rudraa Finance Services ensures that your dream of owning a piece of land becomes a reality without overwhelming your finances. We're committed to simplifying the process of securing a plot and building a solid foundation for your future home.",
+                    "@italic@At Rudraa Finance Services, we believe in making your dreams a reality, one plot at a time. Let us help you take the first step towards your dream home with our Plot Loan. Your vision, your land, your future, powered by Rudraa Finance Services."
                 ],
                 "RequiredDocuments": [
                     {
@@ -303,12 +484,18 @@
                     }
                 ],
                 "keyFeatures": [
+                    "fas fa-store",
                     "Online plot loan sanction facility",
+                    "fas fa-money-bill",
                     "Quick sanction and low EMI",
+                    "fas fa-file-alt",
                     "Simple documentation",
+                    "fas fa-percent",
                     "Amongst the lowest rate of interest",
-                    "Takeover or balance transfer of existing Home Loans Possible."
-                ],
+                    "fas fa-exchange-alt",
+                    "Takeover or balance transfer available"
+                ]
+                ,
                 "additionalDetailsArray": [
                     {
                         "heading": "Purpose",
@@ -349,9 +536,9 @@
                 "additionalDetails": true,
                 "BasicInfo": [
                     "At Rudraa Finance Services, we recognize the vital role that Micro, Small, and Medium Enterprises (MSMEs) play in driving economic growth and innovation. That's why we offer a specialized MSME Loan tailored to empower and support small businesses in their journey to success.",
-                    "Our MSME Loan is designed to meet the unique financial needs of entrepreneurs and small business owners. Whether you're looking to expand your operations, purchase new equipment, optimize working capital, or even embark on a new venture, our MSME Loan provides the necessary financial backing.",
-                    "We understand the diversity within the MSME sector, and our loan options are flexible, accommodating various business profiles, from startups to established enterprises. With competitive interest rates and convenient repayment plans, we aim to reduce the financial burden on your business while promoting growth and stability.",
-                    "At Rudraa Finance Services, we believe in the potential of small businesses to make a big impact. Our MSME Loan is a testament to our commitment to supporting your entrepreneurial journey. Let us be your financial partner as you build and grow your business, one milestone at a time. Your success story, powered by Rudraa Finance Services."
+                    "@list@Tailored for Small Business Success: Our MSME Loan is designed to meet the unique financial needs of entrepreneurs and small business owners. Whether you're looking to expand your operations, purchase new equipment, optimize working capital, or even embark on a new venture, our MSME Loan provides the necessary financial backing.",
+                    "@list@Flexibility and Support: We understand the diversity within the MSME sector, and our loan options are flexible, accommodating various business profiles, from startups to established enterprises. With competitive interest rates and convenient repayment plans, we aim to reduce the financial burden on your business while promoting growth and stability.",
+                    "@italic@At Rudraa Finance Services, we believe in the potential of small businesses to make a big impact. Our MSME Loan is a testament to our commitment to supporting your entrepreneurial journey. Let us be your financial partner as you build and grow your business, one milestone at a time. Your success story, powered by Rudraa Finance Services."
                 ],
                 "RequiredDocuments": [
                     {
@@ -378,11 +565,16 @@
                     }
                 ],
                 "keyFeatures": [
-                    "Quick sanction and flexible repayment terms",
+                    "fas fa-bolt",
+                    "Quick sanction & flexible terms",
+                    "fas fa-file-alt",
                     "Easy documentation",
+                    "fas fa-trophy",
                     "Competitive interest rates",
-                    "Available for both new and existing businesses"
-                ],
+                    "fas fa-users",
+                    "For new & existing businesses"
+                ]
+                ,
                 "additionalDetailsArray": [
                     {
                         "heading": "To be eligible for an MSME loan, you must meet the following criteria",
@@ -421,9 +613,9 @@
                 "additionalDetails": true,
                 "BasicInfo": [
                     "At Rudraa Finance Services, we understand that industrial ventures require substantial capital and robust financial support to flourish and thrive. That's why we offer specialized Industrial Loans, meticulously crafted to fuel the growth and expansion of your industrial enterprise.",
-                    "Our Industrial Loans are designed to cater to a wide range of industries, from manufacturing to infrastructure development, and everything in between. Whether you're planning to upgrade machinery, expand production capacity, or undertake large-scale industrial projects, our financial solutions provide the necessary funds to turn your industrial dreams into reality.",
-                    "We acknowledge the complexity and diversity of the industrial sector, and our loan products are highly customizable to align with your specific requirements. With competitive interest rates and flexible repayment terms, Rudraa Finance Services is committed to ensuring that your industrial venture is well-supported financially.",
-                    "At Rudraa Finance Services, we believe in the power of industry to drive economic progress and innovation. Our Industrial Loans are a testament to our dedication to supporting your industrial endeavors. Let us be your trusted financial partner as you build, expand, and succeed in the industrial landscape. Your industrial vision, powered by Rudraa Finance Services."
+                    "@list@Tailored for Industrial Growth: Our Industrial Loans are designed to cater to a wide range of industries, from manufacturing to infrastructure development, and everything in between. Whether you're planning to upgrade machinery, expand production capacity, or undertake large-scale industrial projects, our financial solutions provide the necessary funds to turn your industrial dreams into reality.",
+                    "@list@Customized Solutions for Diverse Needs: We acknowledge the complexity and diversity of the industrial sector, and our loan products are highly customizable to align with your specific requirements. With competitive interest rates and flexible repayment terms, Rudraa Finance Services is committed to ensuring that your industrial venture is well-supported financially.",
+                    "@italic@At Rudraa Finance Services, we believe in the power of industry to drive economic progress and innovation. Our Industrial Loans are a testament to our dedication to supporting your industrial endeavors. Let us be your trusted financial partner as you build, expand, and succeed in the industrial landscape. Your industrial vision, powered by Rudraa Finance Services."
                 ],
                 "RequiredDocuments": [
                     {
@@ -450,12 +642,18 @@
                     }
                 ],
                 "keyFeatures": [
-                    "Quick sanction and flexible repayment terms",
+                    "fas fa-bolt",
+                    "Quick sanction & flexible terms",
+                    "fas fa-file-alt",
                     "Easy documentation",
+                    "fas fa-trophy",
                     "Competitive interest rates",
-                    "Available for both new and existing businesses",
-                    "Can be secured or unsecured"
-                ],
+                    "fas fa-users",
+                    "For new & existing businesses",
+                    "fas fa-shield-alt",
+                    "Secured or unsecured options"
+                ]
+                ,
                 "additionalDetailsArray": [
                     {
                         "heading": "To be eligible for an MSME loan, you must meet the following criteria",
@@ -506,9 +704,9 @@
                 "additionalDetails": true,
                 "BasicInfo": [
                     "Embarking on ambitious projects requires not only vision and expertise but also substantial financial backing. At Rudraa Finance Services, we specialize in Project Finance solutions tailored to support your large-scale ventures and turn your grand visions into reality.",
-                    "Our Project Finance offerings are designed to provide the necessary capital for complex and substantial projects across various sectors, from infrastructure and real estate development to renewable energy initiatives and beyond. Whether you're planning a new airport, a state-of-the-art commercial complex, or a renewable energy farm, our financial solutions are meticulously structured to meet your project's specific requirements.",
-                    "We understand that project financing involves intricate financial modeling, risk assessment, and due diligence. Our team of experts is here to guide you through the process, ensuring that your project receives the funding it deserves. With competitive interest rates, flexible repayment terms, and a deep commitment to your success, Rudraa Finance Services is your trusted partner in realizing your most ambitious projects.",
-                    "At Rudraa Finance Services, we believe that every visionary project deserves robust financial support. Our Project Finance solutions are a testament to our dedication to supporting innovation and progress. Let us be your financial backbone as you embark on your journey to reshape industries and communities. Your project's success, powered by Rudraa Finance Services."
+                    "@list@Tailored Project Finance Solutions: Our Project Finance offerings are designed to provide the necessary capital for complex and substantial projects across various sectors, from infrastructure and real estate development to renewable energy initiatives and beyond. Whether you're planning a new airport, a state-of-the-art commercial complex, or a renewable energy farm, our financial solutions are meticulously structured to meet your project's specific requirements.",
+                    "@list@Expert Guidance and Commitment: We understand that project financing involves intricate financial modeling, risk assessment, and due diligence. Our team of experts is here to guide you through the process, ensuring that your project receives the funding it deserves. With competitive interest rates, flexible repayment terms, and a deep commitment to your success, Rudraa Finance Services is your trusted partner in realizing your most ambitious projects.",
+                    "@italic@At Rudraa Finance Services, we believe that every visionary project deserves robust financial support. Our Project Finance solutions are a testament to our dedication to supporting innovation and progress. Let us be your financial backbone as you embark on your journey to reshape industries and communities. Your project's success, powered by Rudraa Finance Services."
                 ],
                 "RequiredDocuments": [
                     {
@@ -535,11 +733,16 @@
                     }
                 ],
                 "keyFeatures": [
+                    "fas fa-clock",
                     "Long-term financing",
-                    "Secured against the project assets",
-                    "Repayment from the cash flows generated by the project",
-                    "Available for both greenfield and brownfield projects"
-                ],
+                    "fas fa-shield-alt",
+                    "Secured project assets",
+                    "fas fa-coins",
+                    "Repayment from project cash flows",
+                    "fas fa-tree",
+                    "For greenfield & brownfield projects"
+                ]
+                ,
                 "additionalDetailsArray": [
                     {
                         "heading": "To be eligible for an MSME loan, you must meet the following criteria",
@@ -596,11 +799,11 @@
                 "repayment": false,
                 "additionalDetails": true,
                 "BasicInfo": [
-                    " At Rudraa Finance Services, we believe in providing secure and lucrative investment options for your hard-earned savings. Our range of Deposit products is designed to offer you a safe and rewarding avenue to grow your wealth.",
-                    "Our Deposit options come with competitive interest rates and flexible tenures, ensuring that you can choose the best fit for your financial goals. Whether you're looking for short-term liquidity or long-term wealth accumulation, we have a Deposit product to suit your needs.",
-                    "We understand the importance of security when it comes to your investments. With Rudraa Finance Services, you can trust that your funds are in safe hands, and your investments are backed by our commitment to financial integrity.",
-                    "Our dedicated team is here to assist you every step of the way, making it easy for you to invest and track your returns. At Rudraa Finance Services, we prioritize your financial well-being and aim to make your investment journey seamless and rewarding.",
-                    "Choose Rudraa Finance Services for your Deposits and watch your savings grow securely. Your financial future, powered by Rudraa Finance Services."
+                    "At Rudraa Finance Services, we believe in providing secure and lucrative investment options for your hard-earned savings. Our range of Deposit products is designed to offer you a safe and rewarding avenue to grow your wealth.",
+                    "@list@Competitive Rates and Flexibility: Our Deposit options come with competitive interest rates and flexible tenures, ensuring that you can choose the best fit for your financial goals. Whether you're looking for short-term liquidity or long-term wealth accumulation, we have a Deposit product to suit your needs.",
+                    "@list@Trust in Financial Integrity: We understand the importance of security when it comes to your investments. With Rudraa Finance Services, you can trust that your funds are in safe hands, and your investments are backed by our commitment to financial integrity.",
+                    "@list@Dedicated Support: Our dedicated team is here to assist you every step of the way, making it easy for you to invest and track your returns. At Rudraa Finance Services, we prioritize your financial well-being and aim to make your investment journey seamless and rewarding.",
+                    "@italic@Choose Rudraa Finance Services for your Deposits and watch your savings grow securely. Your financial future, powered by Rudraa Finance Services."
                 ],
                 "RequiredDocuments": [
                     {
@@ -627,11 +830,16 @@
                     }
                 ],
                 "keyFeatures": [
+                    "fas fa-shield-alt",
                     "Low-risk investment",
+                    "fas fa-check-circle",
                     "Guaranteed returns",
+                    "fas fa-coins",
                     "Liquidity",
+                    "fas fa-dollar-sign",
                     "Tax benefits"
-                ],
+                ]
+                ,
                 "additionalDetailsArray": [
                     {
                         "heading": "Types of deposits",
@@ -687,10 +895,10 @@
                 "additionalDetails": true,
                 "BasicInfo": [
                     "At Rudraa Finance Services, we understand that safeguarding your future and protecting your loved ones is of paramount importance. That's why we offer a comprehensive range of Insurance solutions to provide you with peace of mind and financial security.",
-                    "Our Insurance products are carefully curated to cater to your diverse needs, whether it's protecting your family's financial well-being, securing your assets, or planning for retirement. We offer a wide array of insurance options, including life insurance, health insurance, property insurance, and more.",
-                    "With Rudraa Finance Services, you can count on expert guidance to help you choose the right insurance coverage that aligns with your unique circumstances and goals. We prioritize transparency and clarity, ensuring you fully understand your insurance policy, its benefits, and its terms.",
-                    "Our commitment to customer satisfaction extends to quick and hassle-free claim settlements, ensuring that you receive the support you need during challenging times. At Rudraa Finance Services, we view insurance not just as a financial product but as a means to provide you and your loved ones with the security and protection you deserve.",
-                    "Trust Rudraa Finance Services for all your insurance needs and let us be your partner in securing your future. Your peace of mind, powered by Rudraa Finance Services."
+                    "@list@Diverse Insurance Solutions: Our Insurance products are carefully curated to cater to your diverse needs, whether it's protecting your family's financial well-being, securing your assets, or planning for retirement. We offer a wide array of insurance options, including life insurance, health insurance, property insurance, and more.",
+                    "@list@Expert Guidance and Transparency: With Rudraa Finance Services, you can count on expert guidance to help you choose the right insurance coverage that aligns with your unique circumstances and goals. We prioritize transparency and clarity, ensuring you fully understand your insurance policy, its benefits, and its terms.",
+                    "@list@Hassle-free Claim Settlements: Our commitment to customer satisfaction extends to quick and hassle-free claim settlements, ensuring that you receive the support you need during challenging times. At Rudraa Finance Services, we view insurance not just as a financial product but as a means to provide you and your loved ones with the security and protection you deserve.",
+                    "@italic@Trust Rudraa Finance Services for all your insurance needs and let us be your partner in securing your future. Your peace of mind, powered by Rudraa Finance Services."
                 ],
                 "RequiredDocuments": [
                     {
@@ -717,10 +925,14 @@
                     }
                 ],
                 "keyFeatures": [
-                    "Can be used to protect your financial future",
-                    "Can provide you with peace of mind",
-                    "Can offer tax benefits"
-                ],
+                    "fas fa-shield-alt",
+                    "Protects your financial future",
+                    "fas fa-heart",
+                    "Provides peace of mind",
+                    "fas fa-dollar-sign",
+                    "Offers tax benefits"
+                ]
+                ,
                 "additionalDetailsArray": [
                     {
                         "heading": "Types of insurance investments",
@@ -776,9 +988,9 @@
                 "additionalDetails": true,
                 "BasicInfo": [
                     "At Rudraa Finance Services, we believe that growing your wealth should be accessible, rewarding, and tailored to your financial goals. That's why we offer a wide range of Mutual Funds that can serve as a powerful tool to help you achieve your investment objectives.",
-                    "Our Mutual Fund offerings are diverse, catering to various risk appetites and investment horizons. Whether you're a seasoned investor looking for high returns or someone just starting on their investment journey, we have a Mutual Fund solution that suits your needs.",
-                    "With Rudraa Finance Services, you benefit from the expertise of our seasoned fund managers and financial advisors who carefully curate and manage your investment portfolio. We prioritize transparency and offer detailed insights into your investments, empowering you to make informed decisions.",
-                    "Choose Rudraa Finance Services as your trusted partner in wealth creation through Mutual Funds. Let us help you grow your wealth, secure your financial future, and turn your dreams into reality. Your financial success, powered by Rudraa Finance Services."
+                    "@list@Diverse Mutual Fund Options: Our Mutual Fund offerings are diverse, catering to various risk appetites and investment horizons. Whether you're a seasoned investor looking for high returns or someone just starting on their investment journey, we have a Mutual Fund solution that suits your needs.",
+                    "@list@Expertise and Transparency: With Rudraa Finance Services, you benefit from the expertise of our seasoned fund managers and financial advisors who carefully curate and manage your investment portfolio. We prioritize transparency and offer detailed insights into your investments, empowering you to make informed decisions.",
+                    "@italic@Choose Rudraa Finance Services as your trusted partner in wealth creation through Mutual Funds. Let us help you grow your wealth, secure your financial future, and turn your dreams into reality. Your financial success, powered by Rudraa Finance Services."
                 ],
                 "RequiredDocuments": [
                     {
@@ -805,9 +1017,13 @@
                     }
                 ],
                 "keyFeatures": [
+                    "fas fa-briefcase",
                     "Professionally managed",
+                    "fas fa-chart-pie",
                     "Diversified",
+                    "fas fa-coins",
                     "Liquid",
+                    "fas fa-dollar-sign",
                     "Tax efficient"
                 ],
                 "additionalDetailsArray": [
@@ -862,7 +1078,10 @@
             "Personal Loans",
             "Vehicle Loans",
             "Consumer Loans",
-            "Educational Loans"
+            "Educational Loans",
+            "Loan Under Rent Securitization",
+            "Loan Against Securities",
+            "Machinery Loan"
         ],
         "Product_details": {
             "Personal_Loans": {
@@ -872,9 +1091,9 @@
                 "additionalDetails": true,
                 "BasicInfo": [
                     "At Rudraa Finance Services, we recognize that life is full of unexpected twists and turns, and sometimes you need a financial boost to help you navigate through them. Our Personal Loans are here to provide you with the financial flexibility you need, quickly and conveniently.",
-                    "Our Personal Loans cater to a wide range of needs, whether it's financing a dream vacation, covering unexpected medical expenses, consolidating high-interest debts, or even pursuing higher education. With our competitive interest rates and flexible repayment options, we ensure that your personal loan is tailored to your financial circumstances.",
-                    "Applying for a Personal Loan with Rudraa Finance Services is easy and hassle-free. Our dedicated team is committed to guiding you through the application process, and we strive to provide quick approvals and disbursals, so you can address your financial needs without delay.",
-                    "We understand that financial emergencies can arise at any time, and our Personal Loans are designed to be your reliable financial companion when you need it the most. With Rudraa Finance Services, you can access the funds you need to achieve your goals and navigate life's challenges with confidence. Your financial journey, empowered by Rudraa Finance Services."
+                    "@list@Versatile Personal Loans: Our Personal Loans cater to a wide range of needs, whether it's financing a dream vacation, covering unexpected medical expenses, consolidating high-interest debts, or even pursuing higher education. With our competitive interest rates and flexible repayment options, we ensure that your personal loan is tailored to your financial circumstances.",
+                    "@list@Easy Application Process: Applying for a Personal Loan with Rudraa Finance Services is easy and hassle-free. Our dedicated team is committed to guiding you through the application process, and we strive to provide quick approvals and disbursals, so you can address your financial needs without delay.",
+                    "@italic@We understand that financial emergencies can arise at any time, and our Personal Loans are designed to be your reliable financial companion when you need it the most. With Rudraa Finance Services, you can access the funds you need to achieve your goals and navigate life's challenges with confidence. Your financial journey, empowered by Rudraa Finance Services."
                 ],
                 "RequiredDocuments": [
                     {
@@ -901,9 +1120,13 @@
                     }
                 ],
                 "keyFeatures": [
+                    "fas fa-hand-holding-usd",
                     "Flexible use of funds",
+                    "fas fa-clock",
                     "Quick approval",
+                    "fas fa-file-alt",
                     "Easy repayment",
+                    "fas fa-trophy",
                     "Competitive interest rates"
                 ],
                 "additionalDetailsArray": [
@@ -952,10 +1175,11 @@
                 "additionalDetails": true,
                 "BasicInfo": [
                     "At Rudraa Finance Services, we understand that owning your dream vehicle is more than just a mode of transportation; it's a symbol of your aspirations and a key to convenience and freedom. Our Vehicle Loans are designed to turn your automotive dreams into a reality, making it easier than ever to hit the road with style.",
-                    "Whether you're eyeing a sleek new car, a rugged SUV, or a two-wheeler to navigate city streets, our Vehicle Loans offer flexible and tailored financing options. We cater to a wide range of customers, whether you're a first-time buyer, upgrading your vehicle, or adding a new member to your automotive fleet.",
-                    "With competitive interest rates, quick approvals, and convenient repayment plans, Rudraa Finance Services ensures that you can drive away in your dream vehicle without breaking the bank. Our dedicated team is here to assist you every step of the way, from the application process to the moment you take the keys.",
-                    "At Rudraa Finance Services, we believe that owning your vehicle should be an enjoyable and hassle-free experience. Let us be your financial partner as you hit the road to adventure and convenience. Your automotive dreams, powered by Rudraa Finance Services."
-                ],
+                    "@list@Versatile Vehicle Financing: Whether you're eyeing a sleek new car, a rugged SUV, or a two-wheeler to navigate city streets, our Vehicle Loans offer flexible and tailored financing options. We cater to a wide range of customers, whether you're a first-time buyer, upgrading your vehicle, or adding a new member to your automotive fleet.",
+                    "@list@Competitive Rates and Support: With competitive interest rates, quick approvals, and convenient repayment plans, Rudraa Finance Services ensures that you can drive away in your dream vehicle without breaking the bank. Our dedicated team is here to assist you every step of the way, from the application process to the moment you take the keys.",
+                    "@italic@At Rudraa Finance Services, we believe that owning your vehicle should be an enjoyable and hassle-free experience. Let us be your financial partner as you hit the road to adventure and convenience. Your automotive dreams, powered by Rudraa Finance Services."
+                ]
+                ,
                 "RequiredDocuments": [
                     {
                         "KYC documents": [
@@ -981,11 +1205,16 @@
                     }
                 ],
                 "keyFeatures": [
-                    "Used to purchase a vehicle",
+                    "fas fa-car",
+                    "Used for vehicle purchase",
+                    "fas fa-shield-alt",
                     "Secured against the vehicle",
+                    "fas fa-calendar",
                     "Fixed monthly installments",
+                    "fas fa-trophy",
                     "Competitive interest rates"
-                ],
+                ]
+                ,
                 "additionalDetailsArray": [
                     {
                         "heading": "To be eligible for a vehicle loan, you must meet the following criteria",
@@ -1037,9 +1266,9 @@
                 "additionalDetails": true,
                 "BasicInfo": [
                     "At Rudraa Finance Services, we understand that life is filled with moments when you need that extra boost to fulfill your desires, whether it's upgrading your home appliances, purchasing the latest gadgets, or simply treating yourself to something special. Our Consumer Loans are designed to provide you with the financial support you need to make these moments a reality.",
-                    "Our Consumer Loans cover a wide range of personal needs, from buying the latest smartphone, upgrading your home theater system, or even planning a memorable vacation. With competitive interest rates and flexible repayment options, our loans are customized to fit your budget and financial circumstances.",
-                    "Applying for a Consumer Loan with Rudraa Finance Services is quick and straightforward. We aim to provide fast approvals and disbursals so that you can access the funds you need without delay. Our dedicated team is here to assist you throughout the process, ensuring that your desires are met conveniently and efficiently.",
-                    "At Rudraa Finance Services, we believe that everyone deserves to enjoy life's little luxuries and experiences. Let us be your financial partner as you seize the opportunities and create memorable moments. Your aspirations, made possible by Rudraa Finance Services."
+                    "@list@Versatile Consumer Loans: Our Consumer Loans cover a wide range of personal needs, from buying the latest smartphone, upgrading your home theater system, or even planning a memorable vacation. With competitive interest rates and flexible repayment options, our loans are customized to fit your budget and financial circumstances.",
+                    "@list@Quick and Convenient Application: Applying for a Consumer Loan with Rudraa Finance Services is quick and straightforward. We aim to provide fast approvals and disbursals so that you can access the funds you need without delay. Our dedicated team is here to assist you throughout the process, ensuring that your desires are met conveniently and efficiently.",
+                    "@italic@At Rudraa Finance Services, we believe that everyone deserves to enjoy life's little luxuries and experiences. Let us be your financial partner as you seize the opportunities and create memorable moments. Your aspirations, made possible by Rudraa Finance Services."
                 ],
                 "RequiredDocuments": [
                     {
@@ -1066,10 +1295,14 @@
                     }
                 ],
                 "keyFeatures": [
+                    "fas fa-hand-holding-usd",
                     "Used for any purpose",
+                    "fas fa-clock",
                     "Flexible repayment terms",
+                    "fas fa-percent",
                     "Variable interest rates"
-                ],
+                ]
+                ,
                 "additionalDetailsArray": [
                     {
                         "heading": "To be eligible for a consumer loan, you must meet the following criteria",
@@ -1116,9 +1349,9 @@
                 "additionalDetails": true,
                 "BasicInfo": [
                     "At Rudraa Finance Services, we firmly believe that education is the cornerstone of personal and societal growth. We are committed to enabling aspiring students to pursue their educational dreams with our Educational Loans, ensuring that the path to knowledge is accessible and financially feasible.",
-                    "Our Educational Loans are thoughtfully designed to cover a wide spectrum of educational expenses, including tuition fees, course materials, living expenses, and more. Whether you're aiming to pursue higher studies in your home country or abroad, our loans offer competitive interest rates and flexible repayment options, making quality education within your reach.",
-                    "We understand that the journey to acquiring knowledge can be challenging, but it should never be compromised due to financial constraints. Rudraa Finance Services is here to support your academic aspirations. Our team of experts is dedicated to guiding you through the application process, making it seamless and stress-free",
-                    "We take pride in being a partner in your educational journey, helping you achieve your academic and career goals. With Rudraa Finance Services, invest in your future with confidence and unlock a world of opportunities through education. Your dreams, empowered by Rudraa Finance Services."
+                    "@list@Comprehensive Educational Support: Our Educational Loans are thoughtfully designed to cover a wide spectrum of educational expenses, including tuition fees, course materials, living expenses, and more. Whether you're aiming to pursue higher studies in your home country or abroad, our loans offer competitive interest rates and flexible repayment options, making quality education within your reach.",
+                    "@list@Guided Application Process: We understand that the journey to acquiring knowledge can be challenging, but it should never be compromised due to financial constraints. Rudraa Finance Services is here to support your academic aspirations. Our team of experts is dedicated to guiding you through the application process, making it seamless and stress-free.",
+                    "@italic@We take pride in being a partner in your educational journey, helping you achieve your academic and career goals. With Rudraa Finance Services, invest in your future with confidence and unlock a world of opportunities through education. Your dreams, empowered by Rudraa Finance Services."
                 ],
                 "RequiredDocuments": [
                     {
@@ -1145,9 +1378,13 @@
                     }
                 ],
                 "keyFeatures": [
-                    "Used to finance education",
-                    "Can be secured or unsecured",
+                    "fas fa-graduation-cap",
+                    "Used for education financing",
+                    "fas fa-shield-alt",
+                    "Secured or unsecured options",
+                    "fas fa-percent",
                     "Fixed or variable interest rates",
+                    "fas fa-clock",
                     "Flexible repayment terms"
                 ],
                 "additionalDetailsArray": [
@@ -1190,7 +1427,380 @@
                         ]
                     }
                 ]
+            },
+            "Loan_Under_Rent_Securitization": {
+                "MainHead": "WHY OPT FOR RUDRAA FINANCE LOAN UNDER RENT SECURITIZATION?",
+                "SubHead": "Discover the compelling reasons to choose Rudraa Finance when it comes to securing a Loan Under Rent Securitization.",
+                "repayment": false,
+                "additionalDetails": true,
+                "BasicInfo": [
+                    "At Rudraa Finance Services, we recognize the value of your rental income and the financial opportunities it presents. Our Loan Under Rent Securitization is designed to unlock the potential of your rental earnings, providing you with access to a source of capital that can be used for various financial needs.",
+                    "@list@Maximize Rental Income: Our Loan Under Rent Securitization allows you to leverage your rental income to its full potential, ensuring that your property investments become a consistent source of capital.",
+                    "@list@Competitive Interest Rates: Rudraa Finance Services offers competitive interest rates for Loan Under Rent Securitization, making it an attractive financial solution.",
+                    "@italic@At Rudraa Finance Services, we empower property owners to maximize the benefits of their rental income. Our Loan Under Rent Securitization is a testament to our commitment to helping you harness the financial potential of your properties. Let us be your financial partner as you utilize your rental income for various financial goals. Your income, powered by Rudraa Finance Services."
+                ],
+                "RequiredDocuments": [
+                    {
+                        "KYC documents": [
+                            "PAN Card",
+                            "Aadhaar Card",
+                            "Proof of residence"
+                        ]
+                    },
+                    {
+                        "Income documents": [
+                            "Rental agreement and income proof",
+                            "Bank statements for the last 6 to 12 months"
+                        ]
+                    },
+                    {
+                        "Property Documents (if property is identified)": [
+                            "Proof of ownership of the property",
+                            "Property valuation report",
+                            "Approved building plan"
+                        ]
+                    }
+                ],
+                "keyFeatures": [
+                    "fas fa-handshake",
+                    "Loan Under Rent Securitization",
+                    "fas fa-money-bill-wave",
+                    "Loan amount based on rental income",
+                    "fas fa-clock",
+                    "Flexible repayment tenure",
+                    "fas fa-check-circle",
+                    "Quick approval process",
+                    "fas fa-money-check-alt",
+                    "Tax benefits",
+                    "fas fa-credit-card",
+                    "Prepayment and foreclosure options",
+                    "fas fa-hand-holding-usd",
+                    "Processing fees and charges",
+                    "fas fa-balance-scale",
+                    "Transparent eligibility criteria",
+                    "fas fa-file-alt",
+                    "Streamlined documentation"
+                ],
+                "additionalDetailsArray": [
+                    {
+                        "heading": "Loan Utilization",
+                        "detail": [
+                            "Debt consolidation",
+                            "Property purchase",
+                            "Business expansion",
+                            "Education expenses",
+                            "Home renovation or improvement"
+                        ]
+                    },
+                    {
+                        "heading": "Security",
+                        "detail": [
+                            "Registered mortgage of the residential property",
+                            "Demand Promissory Note"
+                        ]
+                    }
+                ]
+            },
+            "Loan_Against_Securities": {
+                "MainHead": "WHY OPT FOR RUDRAA FINANCE LOAN AGAINST SECURITIES?",
+                "SubHead": "Discover the compelling reasons to choose Rudraa Finance when it comes to securing a Loan Against Securities.",
+                "repayment": false,
+                "additionalDetails": true,
+                "BasicInfo": [
+                    "At Rudraa Finance Services, we understand the value of your investments and the need for financial flexibility. Our Loan Against Securities offers you a convenient way to unlock the potential of your securities portfolio, allowing you to access funds while retaining your investment position.",
+                    "@list@Leverage Your Investments: Our Loan Against Securities allows you to leverage your existing investments, ensuring that your financial assets continue to grow while meeting your immediate financial needs.",
+                    "@list@Competitive Interest Rates: Rudraa Finance Services offers competitive interest rates for Loan Against Securities, making it a cost-effective financing option.",
+                    "@italic@At Rudraa Finance Services, we empower you to make the most of your investments. Our Loan Against Securities is a testament to our commitment to providing flexible financial solutions that align with your investment objectives. Let us be your financial partner as you access funds without liquidating your securities. Your investments, powered by Rudraa Finance Services."
+                ],
+                "RequiredDocuments": [
+                    {
+                        "KYC documents": [
+                            "PAN Card",
+                            "Aadhaar Card",
+                            "Proof of residence"
+                        ]
+                    },
+                    {
+                        "Securities Documents": [
+                            "Demat account statement",
+                            "Stock and bond certificates",
+                            "Mutual fund statements"
+                        ]
+                    }
+                ],
+                "keyFeatures": [
+                    "fas fa-gem",
+                    "Loan Against Securities",
+                    "fas fa-money-bill-wave",
+                    "Loan amount based on securities value",
+                    "fas fa-hands-helping",
+                    "Various end-use purposes",
+                    "fas fa-clock",
+                    "Flexible repayment tenure",
+                    "fas fa-percent",
+                    "Competitive interest rates",
+                    "fas fa-user-check",
+                    "Eligibility criteria",
+                    "fas fa-check-circle",
+                    "Quick approval process",
+                    "fas fa-money-check-alt",
+                    "Tax benefits",
+                    "fas fa-credit-card",
+                    "Prepayment and foreclosure options",
+                    "fas fa-hand-holding-usd",
+                    "Processing fees and charges"
+                ],
+                "additionalDetailsArray": [
+                    {
+                        "heading": "Loan Utilization",
+                        "detail": [
+                            "Debt consolidation",
+                            "Business expansion",
+                            "Education expenses",
+                            "Home renovation or improvement",
+                            "Emergency fund"
+                        ]
+                    },
+                    {
+                        "heading": "Security",
+                        "detail": [
+                            "Pledge of securities",
+                            "Demat account lien",
+                            "Demand Promissory Note"
+                        ]
+                    }
+                ]
+            },
+            "Machinery_Loan": {
+                "MainHead": "WHY OPT FOR RUDRAA FINANCE MACHINERY LOAN?",
+                "SubHead": "Discover the compelling reasons to choose Rudraa Finance when it comes to securing a Machinery Loan.",
+                "repayment": false,
+                "additionalDetails": true,
+                "BasicInfo": [
+                    "At Rudraa Finance Services, we understand the significance of machinery in business growth and expansion. Our Machinery Loan is designed to provide you with the financial support you need to acquire, upgrade, or maintain essential equipment and machinery for your business.",
+                    "@list@Fuel Business Growth: Our Machinery Loan is tailored to fuel the growth of your business by ensuring that you have access to the latest and most efficient machinery.",
+                    "@list@Competitive Interest Rates: Rudraa Finance Services offers competitive interest rates for Machinery Loans, making it a cost-effective financing option for your business.",
+                    "@italic@At Rudraa Finance Services, we believe in empowering businesses with the tools they need to succeed. Our Machinery Loan is a testament to our commitment to providing flexible financial solutions that align with your business objectives. Let us be your financial partner as you invest in the machinery that drives your business forward. Your business growth, powered by Rudraa Finance Services."
+                ],
+                "RequiredDocuments": [
+                    {
+                        "KYC documents": [
+                            "PAN Card",
+                            "Aadhaar Card",
+                            "Proof of residence"
+                        ]
+                    },
+                    {
+                        "Business Documents": [
+                            "Business registration certificate",
+                            "Business financial statements",
+                            "Machinery quotation and details"
+                        ]
+                    }
+                ],
+                "keyFeatures": [
+                    "fas fa-tools",
+                    "Machinery Loan",
+                    "fas fa-money-bill-wave",
+                    "Loan amount based on machinery cost",
+                    "fas fa-hands-helping",
+                    "Various end-use purposes",
+                    "fas fa-clock",
+                    "Flexible repayment tenure",
+                    "fas fa-percent",
+                    "Competitive interest rates",
+                    "fas fa-user-check",
+                    "Eligibility criteria",
+                    "fas fa-check-circle",
+                    "Quick approval process",
+                    "fas fa-money-check-alt",
+                    "Tax benefits",
+                    "fas fa-credit-card",
+                    "Prepayment and foreclosure options",
+                    "fas fa-home",
+                    "No risk to property",
+                    "fas fa-file-alt",
+                    "Minimal documentation",
+                    "fas fa-hand-holding-usd",
+                    "Processing fees and charges"
+                ],
+                "additionalDetailsArray": [
+                    {
+                        "heading": "Loan Utilization",
+                        "detail": [
+                            "Machinery purchase",
+                            "Machinery upgrade",
+                            "Maintenance and repair",
+                            "Working capital for machinery-related expenses"
+                        ]
+                    },
+                    {
+                        "heading": "Security",
+                        "detail": [
+                            "Pledge of machinery",
+                            "Collateral security as per lender's policy",
+                            "Demand Promissory Note"
+                        ]
+                    }
+                ]
             }
+            
+            
+        }
+    },
+    {
+        "NavHead": "Cash Credit",
+        "isDropDown": false,
+        "NavbarDetails": "Cash Credit",
+        "Product_details": {
+            "Cash_Credit": {
+                "MainHead": "WHY OPT FOR RUDRAA FINANCE CASH CREDIT?",
+                "SubHead": "Discover the compelling reasons to choose Rudraa Finance when it comes to securing Cash Credit for your business.",
+                "repayment": false,
+                "additionalDetails": true,
+                "BasicInfo": [
+                    "At Rudraa Finance Services, we understand that businesses often require working capital to manage day-to-day operations, seize growth opportunities, and navigate financial challenges. Our Cash Credit facility is designed to provide your business with a flexible and convenient source of working capital to meet these needs.",
+                    "@list@Seamless Cash Flow Management: Our Cash Credit facility enables you to manage your business's cash flow efficiently, ensuring you have the liquidity needed to cover operational expenses and capitalize on growth prospects.",
+                    "@list@Competitive Interest Rates: Rudraa Finance Services offers competitive interest rates for Cash Credit, making it a cost-effective financing option for your business.",
+                    "@italic@At Rudraa Finance Services, we believe in supporting businesses at every stage of their journey. Our Cash Credit facility is a testament to our commitment to providing flexible financial solutions that align with your business objectives. Let us be your financial partner in ensuring your business's financial stability and growth. Your cash flow, powered by Rudraa Finance Services."
+                ],
+                "RequiredDocuments": [
+                    {
+                        "KYC documents": [
+                            "PAN Card",
+                            "Aadhaar Card",
+                            "Proof of residence"
+                        ]
+                    },
+                    {
+                        "Business Documents": [
+                            "Business registration certificate",
+                            "Financial statements",
+                            "Bank statements",
+                            "Details of the business's current financial position"
+                        ]
+                    }
+                ],
+                "keyFeatures": [
+                    "fas fa-money-bill-wave",
+                    "Cash Credit",
+                    "fas fa-hands-helping",
+                    "Various business purposes",
+                    "fas fa-clock",
+                    "Flexible repayment tenure",
+                    "fas fa-percent",
+                    "Competitive interest rates",
+                    "fas fa-user-check",
+                    "Eligibility criteria",
+                    "fas fa-check-circle",
+                    "Quick approval process",
+                    "fas fa-money-check-alt",
+                    "Working capital for daily operations",
+                    "fas fa-credit-card",
+                    "Interest-only payments on the utilized amount",
+                    "fas fa-file-alt",
+                    "Minimal documentation",
+                    "fas fa-hand-holding-usd",
+                    "Processing fees and charges"
+                ],
+                "additionalDetailsArray": [
+                    {
+                        "heading": "Loan Utilization",
+                        "detail": [
+                            "Working capital needs",
+                            "Payment of operational expenses",
+                            "Seasonal inventory purchase",
+                            "Short-term business expansion"
+                        ]
+                    },
+                    {
+                        "heading": "Security",
+                        "detail": [
+                            "Collateral security as per lender's policy",
+                            "Demand Promissory Note"
+                        ]
+                    }
+                ]
+            }
+            
+        }
+    },
+    {
+        
+        "NavHead": "Overdraft",
+        "isDropDown": false,
+        "NavbarDetails": "Overdraft",
+        "Product_details": {
+            "Overdraft": {
+                "MainHead": "WHY OPT FOR RUDRAA FINANCE OVERDRAFT?",
+                "SubHead": "Discover the compelling reasons to choose Rudraa Finance when it comes to securing an Overdraft facility for your business.",
+                "repayment": false,
+                "additionalDetails": true,
+                "BasicInfo": [
+                    "At Rudraa Finance Services, we understand that businesses require flexible financing solutions to manage their cash flow effectively and seize opportunities. Our Overdraft facility is designed to provide your business with the financial flexibility it needs to meet short-term working capital requirements.",
+                    "@list@Enhanced Liquidity: Our Overdraft facility offers enhanced liquidity by allowing you to withdraw funds up to a predetermined limit as and when required, providing you with quick access to capital.",
+                    "@list@Competitive Interest Rates: Rudraa Finance Services offers competitive interest rates for Overdraft, making it a cost-effective financing option for your business.",
+                    "@italic@At Rudraa Finance Services, we believe in empowering businesses with financial flexibility. Our Overdraft facility is a testament to our commitment to providing customized financial solutions that align with your business goals. Let us be your financial partner in ensuring your business's liquidity and growth. Your cash flow, powered by Rudraa Finance Services."
+                ],
+                "RequiredDocuments": [
+                    {
+                        "KYC documents": [
+                            "PAN Card",
+                            "Aadhaar Card",
+                            "Proof of residence"
+                        ]
+                    },
+                    {
+                        "Business Documents": [
+                            "Business registration certificate",
+                            "Financial statements",
+                            "Bank statements",
+                            "Details of the business's current financial position"
+                        ]
+                    }
+                ],
+                "keyFeatures": [
+                    "fas fa-piggy-bank",
+                    "Overdraft",
+                    "fas fa-hands-helping",
+                    "Working capital financing",
+                    "fas fa-clock",
+                    "Flexible repayment tenure",
+                    "fas fa-percent",
+                    "Competitive interest rates",
+                    "fas fa-user-check",
+                    "Eligibility criteria",
+                    "fas fa-check-circle",
+                    "Quick approval process",
+                    "fas fa-money-check-alt",
+                    "Immediate access to funds",
+                    "fas fa-credit-card",
+                    "Interest-only payments on the utilized amount",
+                    "fas fa-file-alt",
+                    "Minimal documentation",
+                    "fas fa-hand-holding-usd",
+                    "Processing fees and charges"
+                ],
+                "additionalDetailsArray": [
+                    {
+                        "heading": "Loan Utilization",
+                        "detail": [
+                            "Working capital needs",
+                            "Payment of operational expenses",
+                            "Inventory purchase",
+                            "Managing seasonal fluctuations"
+                        ]
+                    },
+                    {
+                        "heading": "Security",
+                        "detail": [
+                            "Collateral security as per lender's policy",
+                            "Demand Promissory Note"
+                        ]
+                    }
+                ]
+            }
+            
         }
     }
 ]

@@ -1,19 +1,15 @@
 // Navbar.js
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css"; // Import the CSS file
 import Dropdown from "./Dropdown";
 
 const Navbar = (props) => {
-  console.log("Vrajesh LOOK HERE -> ", props.productsArray);
+  const [scrollY, setScrollY] = useState(0);
   /**
    * Mobile nav toggle
    */
-  const productDropdownArray = [
-    "Product 1",
-    "Product 2",
-    ["subProduct Heading", "subProduct 1", "subProduct 2"],
-  ];
+
   const mobileNav = () => {
     let navbar = document.getElementById("navbar");
     navbar.classList.toggle("navbar-mobile");
@@ -59,27 +55,56 @@ const Navbar = (props) => {
     let selectedElement = document.querySelector(
       ".navbar .dropdown ul .dropdown > a"
     );
-    console.log("OK", selectedElement);
-    console.log("look here", selectedElement.nextElementSibling);
     if (navbar.classList.contains("navbar-mobile")) {
       e.preventDefault();
       selectedElement.nextElementSibling.classList.toggle("dropdown-active");
     }
-    console.log("look here After", selectedElement.nextElementSibling);
     // return true;
   };
 
   // Use the currentLocation prop to determine active navigation item
   const isActive = (path) => {
-    if (
-      path === props.currentLocation ||
-      (path === "/product" && props.currentLocation.search(/product/) !== -1)
-    ) {
+   
+    console.log("path",  props.currentLocation);
+    if (path === props.currentLocation) {
       return true;
-    } else {
+    }else if(path === "/product" &&  props.currentLocation.search(/\/$|\/about$|\/partner$/)==-1){
+      return true
+    }
+     else {
       return false;
     }
   };
+
+  const hanleTopBar = ()=>{
+    const selectHeader = document.getElementById('header');
+    const selectTopbar = document.getElementById('topbar');
+    if(window.scrollY>100){
+      selectHeader.classList.add('header-scrolled')
+      selectTopbar.classList.add('topbar-scrolled')
+    }else{
+      selectHeader.classList.remove('header-scrolled')
+      selectTopbar.classList.remove('topbar-scrolled')
+    }
+  }
+
+    // useEffect for handling scroll
+    useEffect(() => {
+      const handleScroll = () => {
+        setScrollY(window.scrollY);
+      };
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+
+    // useEffect for hiding the top bar when scrollY > 100
+  useEffect(() => {
+      hanleTopBar();
+  }, [scrollY]);
+
   return (
     <>
       {/* Top Bar */}
@@ -87,21 +112,13 @@ const Navbar = (props) => {
         <div className="container d-flex justify-content-between">
           <div className="contact-info d-flex align-items-center">
             <i className="bi bi-envelope"></i>{" "}
-            <Link to="mailto:contact@example.com">contact@example.com</Link>
-            <i className="bi bi-phone"></i> +91 00000 11111
+            <Link to="mailto:rudraafinservices2022@gmail.com">rudraafinservices2022@gmail.com</Link>
+            <i className="bi bi-phone"></i> +91 9824469577
           </div>
           <div className="d-none d-lg-flex social-links align-items-center">
-            <Link to="" className="twitter">
-              <i className="bi bi-twitter"></i>
-            </Link>
-            <Link to="" className="facebook">
-              <i className="bi bi-facebook"></i>
-            </Link>
-            <Link to="" className="instagram">
-              <i className="bi bi-instagram"></i>
-            </Link>
-            <Link to="" className="linkedin">
-              <i className="bi bi-linkedin"></i>
+          <strong style={{fontSize:'smaller'}}>WhatsApp Support</strong>
+            <Link to="https://api.whatsapp.com/send?phone=9824469577"  target="_blank" rel="noopener noreferrer" className="whatsapp">
+            <i class="fab fa-whatsapp fa-lg"></i>
             </Link>
           </div>
         </div>
@@ -113,10 +130,19 @@ const Navbar = (props) => {
           {/* <!-- Uncomment below if you prefer to use an image logo --> */}
           <div className="logo me-auto d-flex flex-column align-items-center text-center">
             <Link to="/" className="">
-              <img src="assets/img/icon50.png" alt="" className="" />
+              <img
+                src="assets/img/Logo_Rudraa-transformed.png"
+                alt=""
+                className=""
+                style={{
+                  pointerEvents: "none",
+                }}
+              />
             </Link>
             <Link to="/" className="">
-              <h5>Rudraa Finance</h5>
+              <h5 style={{ fontWeight: "bold", fontFamily: "Pacifico" }}>
+                Rudraa Finserv
+              </h5>
             </Link>
           </div>
 
@@ -141,7 +167,7 @@ const Navbar = (props) => {
                   }`}
                   to="/about"
                 >
-                  About
+                  About Us
                 </Link>
               </li>
 

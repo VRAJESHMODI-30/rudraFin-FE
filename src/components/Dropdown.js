@@ -3,7 +3,6 @@ import Dropdownheading from "./Dropdownheading";
 import { Link } from "react-router-dom";
 
 function Dropdown(props) {
-  // console.log(props.element, " -> ", Array.isArray(props.element));
   const exitNavbar = () => {
     let navbar = document.getElementById("navbar");
     let element = document.querySelector(".mobile-nav-toggle");

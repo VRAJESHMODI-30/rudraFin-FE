@@ -1,7 +1,7 @@
 // App.js
 import React from "react";
 import { useEffect, useState } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Link, Route, Routes, useLocation } from "react-router-dom";
 // import { useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -176,7 +176,6 @@ function App() {
       tempArr.push(dataObj.NavbarDetails);
       if (Array.isArray(dataObj.NavbarDetails)) {
         footerTempArr = footerTempArr.concat(dataObj.NavbarDetails.slice(1));
-        console.log(footerTempArr);
       } else {
         footerTempArr.push(dataObj.NavbarDetails);
       }
@@ -274,6 +273,7 @@ function App() {
         </Routes>
       </div>
       <Footer productsArray={footerProductList} randomNum={randomNumberArr} />
+
       {/* </Router> */}
     </>
   );

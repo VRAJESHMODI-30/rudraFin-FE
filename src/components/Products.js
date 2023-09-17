@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import "../styles/Products.css";
 
 function Products(props) {
-
- console.log('LOOK THIS ',props.product);
   const goBack = () => {
     window.history.back();
   };
@@ -59,20 +57,20 @@ function Products(props) {
   ) : (
     <>
       {/* <!-- ======= Introduction/About Us Section ======= --> */}
-      <section id="about-us" class="about-us">
-        <div class="container" data-aos="fade-up">
-          <div class="row content">
-            <div class="col-lg-6" data-aos="fade-right">
+      <section id="about-us" className="about-us">
+        <div className="container" data-aos="fade-up">
+          <div className="row content">
+            <div className="col-lg-6" data-aos="fade-right">
               <h2>{props.product.MainHead}</h2>
               <h3>{props.product.SubHead}</h3>
             </div>
-            <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+            <div className="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
               {props.product.BasicInfo.map((data, idx) => {
                 if (data.search(/\@list\@/) !== -1) {
                   return (
-                    <ul>
+                    <ul key={idx}>
                       <li>
-                        <i class="ri-check-double-line"></i>{" "}
+                        <i className="ri-check-double-line"></i>{" "}
                         <strong>
                           {data
                             .replace(/\@list\@/, "")
@@ -91,7 +89,7 @@ function Products(props) {
                   );
                 } else if (data.search(/\@italic\@/) !== -1) {
                   return (
-                    <p class="fst-italic" key={idx}>
+                    <p className="fst-italic" key={idx}>
                       {data.replace(/\@italic\@/, "")}
                     </p>
                   );
@@ -105,11 +103,11 @@ function Products(props) {
       </section>
 
       {/* <!-- ======= Required Document/Why Us Section ======= --> */}
-      <section id="why-us-productPage" class="why-us-productPage section-bg">
-        <div class="container-fluid" data-aos="fade-up">
-          <div class="row">
-            <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-              <div class="content">
+      <section id="why-us-productPage" className="why-us-productPage section-bg">
+        <div className="container-fluid" data-aos="fade-up">
+          <div className="row">
+            <div className="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
+              <div className="content">
                 <h3>
                   Required <strong>Documents</strong>
                 </h3>
@@ -125,21 +123,21 @@ function Products(props) {
                 </p>
               </div>
 
-              <div class="accordion-list">
+              <div className="accordion-list">
                 <ul>
                   <li>
                     <a
                       data-bs-toggle="collapse"
-                      class="collapse"
+                      className="collapse"
                       data-bs-target="#accordion-list-1"
                     >
                       <span>01</span>KYC documents{" "}
-                      <i class="bx bx-chevron-down icon-show"></i>
-                      <i class="bx bx-chevron-up icon-close"></i>
+                      <i className="bx bx-chevron-down icon-show"></i>
+                      <i className="bx bx-chevron-up icon-close"></i>
                     </a>
                     <div
                       id="accordion-list-1"
-                      class="collapse show"
+                      className="collapse show"
                       data-bs-parent=".accordion-list"
                     >
                       <ul className="docfeatures">
@@ -163,15 +161,15 @@ function Products(props) {
                     <a
                       data-bs-toggle="collapse"
                       data-bs-target="#accordion-list-2"
-                      class="collapsed"
+                      className="collapsed"
                     >
                       <span>02</span> Income documents{" "}
-                      <i class="bx bx-chevron-down icon-show"></i>
-                      <i class="bx bx-chevron-up icon-close"></i>
+                      <i className="bx bx-chevron-down icon-show"></i>
+                      <i className="bx bx-chevron-up icon-close"></i>
                     </a>
                     <div
                       id="accordion-list-2"
-                      class="collapse"
+                      className="collapse"
                       data-bs-parent=".accordion-list"
                     >
                       <ul className="docfeatures">
@@ -196,15 +194,15 @@ function Products(props) {
                     <a
                       data-bs-toggle="collapse"
                       data-bs-target="#accordion-list-3"
-                      class="collapsed"
+                      className="collapsed"
                     >
                       <span>03</span> Property Documents (if property is
-                      identified) <i class="bx bx-chevron-down icon-show"></i>
-                      <i class="bx bx-chevron-up icon-close"></i>
+                      identified) <i className="bx bx-chevron-down icon-show"></i>
+                      <i className="bx bx-chevron-up icon-close"></i>
                     </a>
                     <div
                       id="accordion-list-3"
-                      class="collapse"
+                      className="collapse"
                       data-bs-parent=".accordion-list"
                     >
                       <ul className="docfeatures">
@@ -228,7 +226,7 @@ function Products(props) {
             </div>
 
             <div
-              class="col-lg-5 align-items-stretch order-1 order-lg-2 img"
+              className="col-lg-5 align-items-stretch order-1 order-lg-2 img"
               id="documentImg"
               data-aos="zoom-in"
               data-aos-delay="150"
@@ -240,9 +238,9 @@ function Products(props) {
       </section>
 
       {/* <!-- ======= key features/Features Section ======= --> */}
-      <section id="features" class="features">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
+      <section id="features" className="features">
+        <div className="container" data-aos="fade-up">
+          <div className="section-title">
             <h2>Key Features</h2>
             <p>
               These key features encompass some of the fundamental aspects to
@@ -250,13 +248,13 @@ function Products(props) {
             </p>
           </div>
 
-          <div class="row">
+          <div className="row">
             {props.product.keyFeatures.map((data, idx) => {
               if (idx % 2 !== 0) {
                 // Check if the index is odd
                 return (
-                  <div class="col-lg-3 col-md-4 mt-4" key={idx}>
-                    <div class="icon-box">
+                  <div className="col-lg-3 col-md-4 mt-4" key={idx}>
+                    <div className="icon-box">
                       <i
                         class={props.product.keyFeatures[idx - 1]}
                         style={{ color: "#1977cc" }}
@@ -304,11 +302,11 @@ function Products(props) {
 
       {/* <!-- ======= Frequently Asked Questions Section ======= --> */}
       {props.product.additionalDetails ? (
-        <section id="faq" class="faq">
-          <div class="container" data-aos="fade-up">
-            <div class="row gy-4">
-              <div class="col-lg-4">
-                <div class="content px-xl-5">
+        <section id="faq" className="faq">
+          <div className="container" data-aos="fade-up">
+            <div className="row gy-4">
+              <div className="col-lg-4">
+                <div className="content px-xl-5">
                   <h3>
                     Additional Details & <strong>Requirements</strong>
                   </h3>
@@ -324,9 +322,9 @@ function Products(props) {
                 </div>
               </div>
 
-              <div class="col-lg-8">
+              <div className="col-lg-8">
                 <div
-                  class="accordion accordion-flush"
+                  className="accordion accordion-flush"
                   id="faqlist"
                   data-aos="fade-up"
                   data-aos-delay="100"
@@ -335,24 +333,24 @@ function Products(props) {
                     const collapseId = `faq-content-${idx}`; // Create a unique ID for each accordion
 
                     return (
-                      <div key={idx} class="accordion-item">
-                        <h3 class="accordion-header">
+                      <div key={idx} className="accordion-item">
+                        <h3 className="accordion-header">
                           <button
-                            class="accordion-button collapsed"
+                            className="accordion-button collapsed"
                             type="button"
                             data-bs-toggle="collapse"
                             data-bs-target={`#${collapseId}`} // Use the unique ID as data-bs-target
                           >
-                            <span class="num">{idx + 1}.</span>
+                            <span className="num">{idx + 1}.</span>
                             {dataObj.heading}
                           </button>
                         </h3>
                         <div
                           id={collapseId} // Set the ID of the collapsible content
-                          class="accordion-collapse collapse"
+                          className="accordion-collapse collapse"
                           data-bs-parent="#faqlist"
                         >
-                          <div class="accordion-body">
+                          <div className="accordion-body">
                             <ul className="docfeatures">
                               {dataObj.detail.map((data, idx) => {
                                 return (

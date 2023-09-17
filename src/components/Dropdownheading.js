@@ -3,7 +3,6 @@ import Dropdown from "./Dropdown";
 import { Link } from "react-router-dom";
 
 function Dropdownheading(props) {
-  // console.log("in dropdownheading",props);
   const handleNavDeepDropDown = (e) => {
     e.preventDefault();
     let navbar = document.getElementById("navbar");
@@ -14,7 +13,6 @@ function Dropdownheading(props) {
       e.preventDefault();
       selectedElement.nextElementSibling.classList.toggle("dropdown-active");
     }
-    console.log("look here After", selectedElement.nextElementSibling);
     // return true;
   };
   return (

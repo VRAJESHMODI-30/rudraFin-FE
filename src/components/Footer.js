@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import "../styles/Footer.css";
 
 function Footer(props) {
-  console.log("FOOTER 1 ", props.productsArray);
-  console.log("FOOTER 2 ", props.randomNum);
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -17,21 +15,29 @@ function Footer(props) {
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-md-6 footer-contact">
-              {/* <div className='logo me-auto d-flex flex-column align-items-center text-center'>
-       <img src="assets/img/icon50.png" alt="" className=""/>
-        </div> */}
+              {/* <div className="logo me-auto d-flex flex-column align-items-center text-center">
+                <img
+                  src="assets/img/Logo_Rudraa-transformed.png"
+                  alt="Rudraa Fin Services Pvt Ltd"
+                  className=""
+                  style={{height:'5rem',alignItems:'center'}}
+                />
+              </div>
+               */}
               <h3>Rudraa Finance</h3>
               <p>
-                A108 Adam Street <br />
-                Vadodara, Guj 395022
+              405 4th Floor Sundaram Hub, <br />
+              Bahucharaji Rd, Karelibagh, <br />
+              Vadodara, Gujarat 390018 <br />
                 <br />
                 India <br />
                 <br />
-                <strong>Phone:</strong> +91 00000 11111
+                <strong>Phone:</strong> +91 9824469577 | 9824390727
                 <br />
-                <strong>Email:</strong> contact@example.com
+                <strong>Email:</strong> rudraafinservices2022@gmail.com
                 <br />
               </p>
+              
             </div>
 
             <div className="col-lg-2 col-md-6 footer-links">
@@ -62,11 +68,11 @@ function Footer(props) {
             </div>
 
             <div className="col-lg-3 col-md-6 footer-links">
-              <h4>Product Offering</h4>
+              <h4>Products Offering</h4>
               <ul>
-                {props.randomNum.map((data) => {
+                {props.randomNum.map((data, idx) => {
                   return (
-                    <li>
+                    <li key={idx}>
                       <i className="bx bx-chevron-right"></i>{" "}
                       <Link
                         to={`/${props.productsArray[data].replace(/\s/g, "_")}`}
@@ -85,8 +91,7 @@ function Footer(props) {
             <div className="col-lg-4 col-md-6 footer-newsletter">
               <h4>Join Our Newsletter</h4>
               <p>
-                Tamen quem nulla quae legam multos aute sint culpa legam noster
-                magna
+                Stay Informed and Empowered
               </p>
               <form action="" method="post">
                 <input type="email" name="email" />
@@ -101,7 +106,7 @@ function Footer(props) {
           <div className="copyright">
             &copy; Copyright{" "}
             <strong>
-              <span>Rudraa Finance</span>
+              <span>Rudraa Fin Services Pvt Ltd</span>
             </strong>
             . All Rights Reserved
           </div>
@@ -119,10 +124,16 @@ function Footer(props) {
           </div>
         </div>
         <div className="social-links text-center text-md-right pt-3 pt-md-0">
-          <Link to="#" className="twitter">
-            <i className="bx bxl-twitter"></i>
+          <strong>WhatsApp Support&nbsp;&nbsp;</strong>
+          <Link
+            to="https://api.whatsapp.com/send?phone=9824469577"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="whatsapp"
+          >
+            <i class="fab fa-whatsapp fa-lg"></i>
           </Link>
-          <Link to="#" className="facebook">
+          {/* <Link to="#" className="facebook">
             <i className="bx bxl-facebook"></i>
           </Link>
           <Link to="#" className="instagram">
@@ -133,7 +144,7 @@ function Footer(props) {
           </Link>
           <Link to="#" className="linkedin">
             <i className="bx bxl-linkedin"></i>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </footer>

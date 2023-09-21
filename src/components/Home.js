@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 // import '../styles/leaflet.css'; // Ensure Leaflet CSS is imported
@@ -11,7 +11,7 @@ const Home = () => {
   // Define the initial coordinates and zoom level
   const center = [22.315794604413476, 73.19809006006648]; //change logitude and logitude to set location
   const zoom = 15;
-
+  const [isActive,setIsActive] = useState(false);
   // useEffect(() => {
   //   // Initialize Swiper
   //   const testimonialsSlider = new window.Swiper(".testimonials-slider", {
@@ -167,11 +167,11 @@ const Home = () => {
           <div className="section-title">
             <h2>Services</h2>
             <p>
-              In the intricate world of finance, Rudraa Finserve Pvt. Ltd. stands as
-              your beacon of trust and expertise. Our tailored solutions,
-              commitment to your financial well-being, and dedication to
-              simplifying complexity make us your ideal partner on the path to
-              lasting financial success.
+              In the intricate world of finance, Rudraa Finserve Pvt. Ltd.
+              stands as your beacon of trust and expertise. Our tailored
+              solutions, commitment to your financial well-being, and dedication
+              to simplifying complexity make us your ideal partner on the path
+              to lasting financial success.
             </p>
           </div>
 
@@ -268,137 +268,144 @@ const Home = () => {
       {/* <!-- End Services Section --> */}
 
       {/* <!-- ======= Testimonials Section ======= --> */}
-      <section id="testimonials" className="testimonials">
-        <div className="container">
-          <div className={`tultip ${window.screen.width <= 768 ? "ms-5" : ""}`}>
-            <i className="far fa-question-circle"></i>
-            <span className="tooltip-text">Drag to Change</span>
-          </div>
-
-          <div
-            className="testimonials-slider swiper"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div className="swiper-wrapper">
-              <div className="swiper-slide">
-                <div className="testimonial-wrap">
-                  <div className="testimonial-item">
-                    <img
-                      src="assets/img/testimonials/testimonials-1.jpg"
-                      className="testimonial-img"
-                      alt=""
-                    />
-                    <h3>Name Here</h3>
-                    <h4>Ceo &amp; Founder</h4>
-                    <p>
-                      <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                      Proin iaculis purus consequat sem cure digni ssim donec
-                      porttitora entum suscipit rhoncus. Accusantium quam,
-                      ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                      risus at semper.
-                      <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* <!-- End testimonial item --> */}
-
-              <div className="swiper-slide">
-                <div className="testimonial-wrap">
-                  <div className="testimonial-item">
-                    <img
-                      src="assets/img/testimonials/testimonials-2.jpg"
-                      className="testimonial-img"
-                      alt=""
-                    />
-                    <h3>Name Here</h3>
-                    <h4>Designer</h4>
-                    <p>
-                      <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                      Export tempor illum tamen malis malis eram quae irure esse
-                      labore quem cillum quid cillum eram malis quorum velit
-                      fore eram velit sunt aliqua noster fugiat irure amet legam
-                      anim culpa.
-                      <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* <!-- End testimonial item --> */}
-
-              <div className="swiper-slide">
-                <div className="testimonial-wrap">
-                  <div className="testimonial-item">
-                    <img
-                      src="assets/img/testimonials/testimonials-3.jpg"
-                      className="testimonial-img"
-                      alt=""
-                    />
-                    <h3>Name Here</h3>
-                    <h4>Store Owner</h4>
-                    <p>
-                      <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                      Enim nisi quem export duis labore cillum quae magna enim
-                      sint quorum nulla quem veniam duis minim tempor labore
-                      quem eram duis noster aute amet eram fore quis sint minim.
-                      <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* <!-- End testimonial item --> */}
-
-              <div className="swiper-slide">
-                <div className="testimonial-wrap">
-                  <div className="testimonial-item">
-                    <img
-                      src="assets/img/testimonials/testimonials-4.jpg"
-                      className="testimonial-img"
-                      alt=""
-                    />
-                    <h3>Name Here</h3>
-                    <h4>Freelancer</h4>
-                    <p>
-                      <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                      Fugiat enim eram quae cillum dolore dolor amet nulla culpa
-                      multos export minim fugiat minim velit minim dolor enim
-                      duis veniam ipsum anim magna sunt elit fore quem dolore
-                      labore illum veniam.
-                      <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* <!-- End testimonial item --> */}
-
-              <div className="swiper-slide">
-                <div className="testimonial-wrap">
-                  <div className="testimonial-item">
-                    <img
-                      src="assets/img/testimonials/testimonials-5.jpg"
-                      className="testimonial-img"
-                      alt=""
-                    />
-                    <h3>Name Here</h3>
-                    <h4>Entrepreneur</h4>
-                    <p>
-                      <i className="bx bxs-quote-alt-left quote-icon-left"></i>
-                      Quis quorum aliqua sint quem legam fore sunt eram irure
-                      aliqua veniam tempor noster veniam enim culpa labore duis
-                      sunt culpa nulla illum cillum fugiat legam esse veniam
-                      culpa fore nisi cillum quid.
-                      <i className="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* <!-- End testimonial item --> */}
+      {isActive ? (
+        <section id="testimonials" className="testimonials">
+          <div className="container">
+            <div
+              className={`tultip ${window.screen.width <= 768 ? "ms-5" : ""}`}
+            >
+              <i className="far fa-question-circle"></i>
+              <span className="tooltip-text">Drag to Change</span>
             </div>
-            <div className="swiper-pagination"></div>
+
+            <div
+              className="testimonials-slider swiper"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div className="swiper-wrapper">
+                <div className="swiper-slide">
+                  <div className="testimonial-wrap">
+                    <div className="testimonial-item">
+                      <img
+                        src="assets/img/testimonials/testimonials-1.jpg"
+                        className="testimonial-img"
+                        alt=""
+                      />
+                      <h3>Name Here</h3>
+                      <h4>Ceo &amp; Founder</h4>
+                      <p>
+                        <i className="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Proin iaculis purus consequat sem cure digni ssim donec
+                        porttitora entum suscipit rhoncus. Accusantium quam,
+                        ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                        risus at semper.
+                        <i className="bx bxs-quote-alt-right quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                {/* <!-- End testimonial item --> */}
+
+                <div className="swiper-slide">
+                  <div className="testimonial-wrap">
+                    <div className="testimonial-item">
+                      <img
+                        src="assets/img/testimonials/testimonials-2.jpg"
+                        className="testimonial-img"
+                        alt=""
+                      />
+                      <h3>Name Here</h3>
+                      <h4>Designer</h4>
+                      <p>
+                        <i className="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Export tempor illum tamen malis malis eram quae irure
+                        esse labore quem cillum quid cillum eram malis quorum
+                        velit fore eram velit sunt aliqua noster fugiat irure
+                        amet legam anim culpa.
+                        <i className="bx bxs-quote-alt-right quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                {/* <!-- End testimonial item --> */}
+
+                <div className="swiper-slide">
+                  <div className="testimonial-wrap">
+                    <div className="testimonial-item">
+                      <img
+                        src="assets/img/testimonials/testimonials-3.jpg"
+                        className="testimonial-img"
+                        alt=""
+                      />
+                      <h3>Name Here</h3>
+                      <h4>Store Owner</h4>
+                      <p>
+                        <i className="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Enim nisi quem export duis labore cillum quae magna enim
+                        sint quorum nulla quem veniam duis minim tempor labore
+                        quem eram duis noster aute amet eram fore quis sint
+                        minim.
+                        <i className="bx bxs-quote-alt-right quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                {/* <!-- End testimonial item --> */}
+
+                <div className="swiper-slide">
+                  <div className="testimonial-wrap">
+                    <div className="testimonial-item">
+                      <img
+                        src="assets/img/testimonials/testimonials-4.jpg"
+                        className="testimonial-img"
+                        alt=""
+                      />
+                      <h3>Name Here</h3>
+                      <h4>Freelancer</h4>
+                      <p>
+                        <i className="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Fugiat enim eram quae cillum dolore dolor amet nulla
+                        culpa multos export minim fugiat minim velit minim dolor
+                        enim duis veniam ipsum anim magna sunt elit fore quem
+                        dolore labore illum veniam.
+                        <i className="bx bxs-quote-alt-right quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                {/* <!-- End testimonial item --> */}
+
+                <div className="swiper-slide">
+                  <div className="testimonial-wrap">
+                    <div className="testimonial-item">
+                      <img
+                        src="assets/img/testimonials/testimonials-5.jpg"
+                        className="testimonial-img"
+                        alt=""
+                      />
+                      <h3>Name Here</h3>
+                      <h4>Entrepreneur</h4>
+                      <p>
+                        <i className="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Quis quorum aliqua sint quem legam fore sunt eram irure
+                        aliqua veniam tempor noster veniam enim culpa labore
+                        duis sunt culpa nulla illum cillum fugiat legam esse
+                        veniam culpa fore nisi cillum quid.
+                        <i className="bx bxs-quote-alt-right quote-icon-right"></i>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                {/* <!-- End testimonial item --> */}
+              </div>
+              <div className="swiper-pagination"></div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      ) : (
+        null
+      )}
       {/* <!-- End Testimonials Section --> */}
 
       {/* <!-- ======= Contact Section ======= --> */}
@@ -407,33 +414,12 @@ const Home = () => {
           <div className="section-title">
             <h2>Contact</h2>
             <p>
-            Our office hours are from Monday to Saturday, 10:00 AM to 7:00 PM. We are here to serve you during these hours, so please feel free to get in touch.
+              Our office hours are from Monday to Saturday, 10:00 AM to 7:00 PM.
+              We are here to serve you during these hours, so please feel free
+              to get in touch.
             </p>
           </div>
         </div>
-
-        {/* <div>
-        <iframe style={{border:"0", width: "100%", height: "350px"}} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
-      </div> */}
-        {/* <MapContainer
-          className="mx-auto"
-          center={center}
-          zoom={zoom}
-          style={{ width: "95%", height: "350px" }}
-        >
-          <TileLayer
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            attribution='&copy; <Link to="https://www.openstreetmap.org/copyright">OpenStreetMap</Link> contributors'
-          />
-          <Marker position={center}>
-            <Popup>
-              <b>Address</b>
-              <br />
-              405 4th Floor Sundaram Hub, Bahucharaji Rd, Karelibagh,
-              Vadodara, Gujarat 390018
-            </Popup>
-          </Marker>
-        </MapContainer> */}
 
         <div className="container">
           <div className="row mt-5">

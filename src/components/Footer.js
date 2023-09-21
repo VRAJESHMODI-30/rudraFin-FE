@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Footer.css";
+import privacyPolicyPDF from '../assets/Documents/Privacy_Policy.pdf';
+// import termsPolicyPDF from '../assets/Documents/';
 
 function Footer(props) {
   const scrollToTop = () => {
@@ -9,6 +11,39 @@ function Footer(props) {
       behavior: "smooth", // Optional: Adds smooth scrolling animation
     });
   };
+
+  const downloadFile = (pdfName) => {
+    if (pdfName == 'privacyPolicy') {
+        fetch(privacyPolicyPDF).then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'Rudraa-FinServ-Privacy Policy.pdf';
+                alink.click();
+            })
+        })
+    }
+    // else if (pdfName == 'termsPolicy') {
+    //     fetch(termsPolicyPDF).then(response => {
+    //         response.blob().then(blob => {
+    //             // Creating new object of PDF file
+    //             const fileURL = window.URL.createObjectURL(blob);
+    //             // Setting various property values
+    //             let alink = document.createElement('a');
+    //             alink.href = fileURL;
+    //             alink.download = 'Rudraa-FinServ-Terms of Service.pdf';
+    //             alink.click();
+    //         })
+    //     })
+    // }
+    else {
+       console.log('NOTHING');
+    }
+}
+  
   return (
     <footer id="footer">
       <div className="footer-top">
@@ -62,7 +97,7 @@ function Footer(props) {
                 </li>
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="#">Privacy policy</Link>
+                  <Link to="#" onClick={() => downloadFile("privacyPolicy")}>Privacy policy</Link>
                 </li>
               </ul>
             </div>
@@ -133,18 +168,6 @@ function Footer(props) {
           >
             <i class="fab fa-whatsapp fa-lg"></i>
           </Link>
-          {/* <Link to="#" className="facebook">
-            <i className="bx bxl-facebook"></i>
-          </Link>
-          <Link to="#" className="instagram">
-            <i className="bx bxl-instagram"></i>
-          </Link>
-          <Link to="#" className="google-plus">
-            <i className="bx bxl-skype"></i>
-          </Link>
-          <Link to="#" className="linkedin">
-            <i className="bx bxl-linkedin"></i>
-          </Link> */}
         </div>
       </div>
     </footer>

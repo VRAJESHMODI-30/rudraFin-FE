@@ -112,8 +112,8 @@ const Navbar = (props) => {
         <div className="container d-flex justify-content-between">
           <div className="contact-info d-flex align-items-center">
             <i className="bi bi-envelope"></i>{" "}
-            <Link to="mailto:rudraafinservices2022@gmail.com">rudraafinservices2022@gmail.com</Link>
-            <i className="bi bi-phone"></i> +91 9824469577
+            <Link to="mailto:info@rudraafinservices.com">info@rudraafinservices.com</Link>
+            <i className="bi bi-phone"></i>  <a href="tel:+919824469577">+91 9824469577</a>
           </div>
           <div className="d-none d-lg-flex social-links align-items-center">
           <strong style={{fontSize:'smaller'}}>WhatsApp Support</strong>

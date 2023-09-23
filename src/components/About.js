@@ -33,7 +33,7 @@ const About = () => {
                 <ul>
                   {/* <li><i className="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li> */}
                   {/* <li><i className="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Master</span></li> */}
-                  <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <span>rudraafinservices2022@gmail.com</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <span>info@rudraafinservices.com</span></li>
                   <li><i className="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.rudraafinservices.com</span></li>
                   <li><i className="bi bi-chevron-right"></i> <strong>Expertise:</strong> <span>14+ Years of Financial Expertise</span></li>
                 </ul>
@@ -105,7 +105,7 @@ const About = () => {
           <div className="col-lg-4 col-md-6 mt-5 mt-lg-0">
             <div className="count-box">
               <i className="fas fa-award"></i>
-              <CountUp start={0} end={500}  duration={1.25}  suffix=" cr+" />
+              <CountUp start={0} end={100}  duration={1.25}  suffix=" cr+" />
               <p>Funds Empowered</p>
             </div>
           </div>

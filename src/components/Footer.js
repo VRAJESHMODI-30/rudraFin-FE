@@ -69,7 +69,7 @@ function Footer(props) {
                 <br />
                 <strong>Phone:</strong> +91 9824469577 | 9824390727
                 <br />
-                <strong>Email:</strong> rudraafinservices2022@gmail.com
+                <strong>Email:</strong> info@rudraafinservices.com
                 <br />
               </p>
               
@@ -90,11 +90,16 @@ function Footer(props) {
                     About us
                   </Link>
                 </li>
-                {/* <li><i className="bx bx-chevron-right"></i> <Link to="#">Services</Link></li> */}
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="#">Terms of service</Link>
+                  <Link to="/partner" onClick={scrollToTop}>
+                    Become Partner
+                  </Link>
                 </li>
+                {/* <li>
+                  <i className="bx bx-chevron-right"></i>{" "}
+                  <Link to="#">Terms of service</Link>
+                </li> */}
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
                   <Link to="#" onClick={() => downloadFile("privacyPolicy")}>Privacy policy</Link>

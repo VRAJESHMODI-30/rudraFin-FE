@@ -100,3 +100,38 @@ h6 {
 }
 
 
+/* For WebKit-based browsers (e.g., Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* For Firefox */
+/* Firefox uses a different syntax for scrollbar styling */
+/* You can use the scrollbar-width and scrollbar-color properties */
+/* Note that this may not work in all versions of Firefox */
+
+/* Hide the scrollbar track */
+/* This is a global setting that affects all scrollbars in Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+/* For Microsoft Edge and Internet Explorer */
+/* These browsers do not support scrollbar styling with CSS */
+
+/* To style scrollbars in Edge and IE, you may need to use JavaScript or third-party libraries */
+

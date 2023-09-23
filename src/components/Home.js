@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 // import '../styles/leaflet.css'; // Ensure Leaflet CSS is imported
@@ -6,48 +6,17 @@ import Swiper from "swiper"; // Import Swiper library
 import "../../node_modules/leaflet/dist/leaflet.css";
 import "../styles/Home.css"; // Import the CSS file
 import "../../node_modules/swiper/swiper-bundle.min.css";
+import axios from "axios";
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Home = () => {
-  // Define the initial coordinates and zoom level
-  const center = [22.315794604413476, 73.19809006006648]; //change logitude and logitude to set location
-  const zoom = 15;
-  const [isActive,setIsActive] = useState(false);
-  // useEffect(() => {
-  //   // Initialize Swiper
-  //   const testimonialsSlider = new window.Swiper(".testimonials-slider", {
-  //     slidesPerView: 1,
-  //     spaceBetween: 10,
-  //     loop: true,
-  //     autoplay: {
-  //       delay: 5000, // Autoplay delay in milliseconds
-  //     },
-  //     // breakpoints: {
-  //     //   320: {
-  //     //     slidesPerView: 1,
-  //     //     spaceBetween: 20
-  //     //   },
-  //     //   1200: {
-  //     //     slidesPerView: 2,
-  //     //     spaceBetween: 20
-  //     //   }
-  //     // }
-  //   });
-
-  //   // Enable manual sliding on mobile
-  //   let touchStartX = 0;
-  //   testimonialsSlider.el.addEventListener("touchstart", (e) => {
-  //     touchStartX = e.touches[0].clientX;
-  //   });
-
-  //   testimonialsSlider.el.addEventListener("touchmove", (e) => {
-  //     const touchEndX = e.touches[0].clientX;
-  //     if (touchStartX - touchEndX > 50) {
-  //       testimonialsSlider.slideNext();
-  //     } else if (touchEndX - touchStartX > 50) {
-  //       testimonialsSlider.slidePrev();
-  //     }
-  //   });
-  // }, []);
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const phoneRef = useRef();
+  const subjectRef = useRef();
+  const messageRef = useRef();
+  const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
     new Swiper(".testimonials-slider", {
@@ -76,8 +45,46 @@ const Home = () => {
       },
     });
   }, []);
+
+  const sendRequest = async (route, e) => {
+   
+    e.preventDefault(); 
+   
+    try {
+      const formData = new FormData();
+
+      formData.append("name", nameRef.current.value);
+      formData.append("email", emailRef.current.value);
+      formData.append("phone", phoneRef.current.value);
+      formData.append("subject", subjectRef.current.value);
+      formData.append("message", messageRef.current.value);
+
+      const response = await axios.post('http://127.0.0.1:5000'+route, formData, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      if (response.status === 200) {
+        nameRef.current.value = "";
+        emailRef.current.value = "";
+        phoneRef.current.value = "";
+        subjectRef.current.value = "";
+        messageRef.current.value = "";
+
+        toast.success("Message sent successfully. We'll be in touch soon!");
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <>
+      <div>
+        <ToastContainer />
+      </div>
+
       <section id="hero" className="d-flex align-items-center">
         <div className="container">
           <h1>Welcome to Rudraa FinServ Pvt. Ltd.</h1>
@@ -403,9 +410,7 @@ const Home = () => {
             </div>
           </div>
         </section>
-      ) : (
-        null
-      )}
+      ) : null}
       {/* <!-- End Testimonials Section --> */}
 
       {/* <!-- ======= Contact Section ======= --> */}
@@ -437,7 +442,7 @@ const Home = () => {
                 <div className="email">
                   <i className="bi bi-envelope"></i>
                   <h4>Email:</h4>
-                  <p>rudraafinservices2022@gmail.com</p>
+                  <p>info@rudraafinservices.com</p>
                 </div>
 
                 <div className="phone">
@@ -450,14 +455,14 @@ const Home = () => {
 
             <div className="col-lg-8 mt-5 mt-lg-0">
               <form
-                action="forms/contact.php"
-                method="post"
+                onSubmit={(e) => sendRequest("/api/contact", e)}
                 role="form"
                 className="php-email-form"
               >
                 <div className="row">
                   <div className="col-md-6 form-group">
                     <input
+                      ref={nameRef}
                       type="text"
                       name="name"
                       className="form-control"
@@ -468,6 +473,7 @@ const Home = () => {
                   </div>
                   <div className="col-md-6 form-group mt-3 mt-md-0">
                     <input
+                      ref={emailRef}
                       type="email"
                       className="form-control"
                       name="email"
@@ -477,18 +483,37 @@ const Home = () => {
                     />
                   </div>
                 </div>
-                <div className="form-group mt-3">
-                  <input
-                    type="text"
-                    className="form-control"
-                    name="subject"
-                    id="subject"
-                    placeholder="Subject"
-                    required
-                  />
+                <div className="row">
+                  <div className="col-md-6 form-group mt-3">
+                    <input
+                      ref={subjectRef}
+                      type="text"
+                      className="form-control"
+                      name="subject"
+                      id="subject"
+                      placeholder="Subject"
+                      required
+                    />
+                  </div>
+                  <div className="col-md-6 form-group mt-3">
+                    <input
+                      ref={phoneRef}
+                      type="tel"
+                      className="form-control"
+                      name="phone"
+                      id="phone"
+                      placeholder="Your Phone"
+                      data-rule="minlen:4"
+                      data-msg="Please enter at least 4 chars"
+                      inputMode="numeric"
+                      pattern="[0-9]{10}"
+                      required
+                    />
+                  </div>
                 </div>
                 <div className="form-group mt-3">
                   <textarea
+                    ref={messageRef}
                     className="form-control"
                     name="message"
                     rows="5"

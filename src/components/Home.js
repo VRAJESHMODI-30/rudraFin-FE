@@ -59,7 +59,7 @@ const Home = () => {
       formData.append("subject", subjectRef.current.value);
       formData.append("message", messageRef.current.value);
 
-      const response = await axios.post('http://127.0.0.1:5000'+route, formData, {
+      const response = await axios.post(process.env.REACT_APP_API_URL+route, formData, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -455,7 +455,7 @@ const Home = () => {
 
             <div className="col-lg-8 mt-5 mt-lg-0">
               <form
-                onSubmit={(e) => sendRequest("/api/contact", e)}
+                onSubmit={(e) => sendRequest("/contact", e)}
                 role="form"
                 className="php-email-form"
               >

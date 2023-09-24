@@ -24,7 +24,7 @@ const Partner = () => {
       formData.append('address', addressRef.current.value);
       formData.append('message', messageRef.current.value);
 
-      const response = await axios.post('http://127.0.0.1:5000'+route, formData, {
+      const response = await axios.post(process.env.REACT_APP_API_URL+route, formData, {
         headers: {
           'Content-Type': 'application/json', // Set the appropriate Content-Type
         },
@@ -58,7 +58,7 @@ const Partner = () => {
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem...</p>
           </div>
 
-          <form onSubmit={(e) => sendRequest('/api/become-partner', e)} method="post" role="form" className="php-email-form">
+          <form onSubmit={(e) => sendRequest('/become-partner', e)} method="post" role="form" className="php-email-form">
             <div className="row">
               <div className="col-md-4 form-group">
                 <input ref={nameRef} type="text" name="name" className="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />

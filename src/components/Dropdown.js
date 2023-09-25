@@ -4,6 +4,12 @@ import { Link } from "react-router-dom";
 
 function Dropdown(props) {
   const exitNavbar = () => {
+    const elementsWithClass = document.querySelectorAll(".navbar .dropdown-active");
+
+      // Remove the "dropdown-active" class from all elements
+      elementsWithClass.forEach((el) => {
+          el.classList.remove("dropdown-active");
+      });
     let navbar = document.getElementById("navbar");
     let element = document.querySelector(".mobile-nav-toggle");
     if (element && navbar.classList.contains("navbar-mobile")) {

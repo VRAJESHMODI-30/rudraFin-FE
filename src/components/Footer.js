@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/Footer.css";
-import privacyPolicyPDF from '../assets/Documents/Privacy_Policy.pdf';
+import privacyPolicyPDF from "../assets/Documents/Privacy_Policy.pdf";
 // import termsPolicyPDF from '../assets/Documents/';
 
 function Footer(props) {
@@ -13,18 +13,18 @@ function Footer(props) {
   };
 
   const downloadFile = (pdfName) => {
-    if (pdfName == 'privacyPolicy') {
-        fetch(privacyPolicyPDF).then(response => {
-            response.blob().then(blob => {
-                // Creating new object of PDF file
-                const fileURL = window.URL.createObjectURL(blob);
-                // Setting various property values
-                let alink = document.createElement('a');
-                alink.href = fileURL;
-                alink.download = 'Rudraa-FinServ-Privacy Policy.pdf';
-                alink.click();
-            })
-        })
+    if (pdfName == "privacyPolicy") {
+      fetch(privacyPolicyPDF).then((response) => {
+        response.blob().then((blob) => {
+          // Creating new object of PDF file
+          const fileURL = window.URL.createObjectURL(blob);
+          // Setting various property values
+          let alink = document.createElement("a");
+          alink.href = fileURL;
+          alink.download = "Rudraa-FinServ-Privacy Policy.pdf";
+          alink.click();
+        });
+      });
     }
     // else if (pdfName == 'termsPolicy') {
     //     fetch(termsPolicyPDF).then(response => {
@@ -40,30 +40,21 @@ function Footer(props) {
     //     })
     // }
     else {
-       console.log('NOTHING');
+      console.log("NOTHING");
     }
-}
-  
+  };
+
   return (
     <footer id="footer">
       <div className="footer-top">
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-md-6 footer-contact">
-              {/* <div className="logo me-auto d-flex flex-column align-items-center text-center">
-                <img
-                  src="assets/img/Logo_Rudraa-transformed.png"
-                  alt="Rudraa Fin Services Pvt Ltd"
-                  className=""
-                  style={{height:'5rem',alignItems:'center'}}
-                />
-              </div>
-               */}
               <h3>Rudraa Finance</h3>
               <p>
-              405 4th Floor Sundaram Hub, <br />
-              Bahucharaji Rd, Karelibagh, <br />
-              Vadodara, Gujarat 390018 <br />
+                405 4th Floor Sundaram Hub, <br />
+                Bahucharaji Rd, Karelibagh, <br />
+                Vadodara, Gujarat 390018 <br />
                 <br />
                 India <br />
                 <br />
@@ -72,7 +63,6 @@ function Footer(props) {
                 <strong>Email:</strong> info@rudraafinservices.com
                 <br />
               </p>
-              
             </div>
 
             <div className="col-lg-2 col-md-6 footer-links">
@@ -102,7 +92,9 @@ function Footer(props) {
                 </li> */}
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="#" onClick={() => downloadFile("privacyPolicy")}>Privacy policy</Link>
+                  <Link to="#" onClick={() => downloadFile("privacyPolicy")}>
+                    Privacy policy
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -130,9 +122,7 @@ function Footer(props) {
 
             <div className="col-lg-4 col-md-6 footer-newsletter">
               <h4>Join Our Newsletter</h4>
-              <p>
-                Stay Informed and Empowered
-              </p>
+              <p>Stay Informed and Empowered</p>
               <form action="" method="post">
                 <input type="email" name="email" />
                 <input type="submit" value="Subscribe" />
@@ -171,7 +161,7 @@ function Footer(props) {
             rel="noopener noreferrer"
             className="whatsapp"
           >
-            <i class="fab fa-whatsapp fa-lg"></i>
+            <i className="fab fa-whatsapp fa-lg"></i>
           </Link>
         </div>
       </div>

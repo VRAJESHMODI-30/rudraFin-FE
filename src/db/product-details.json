@@ -524,12 +524,12 @@
         "isDropDown": true,
         "NavbarDetails": [
             "Business Loans",
-            "MSME loans",
+            "MSME Loans",
             "Industrial Loans",
             "Project Finance"
         ],
         "Product_details": {
-            "MSME_loans": {
+            "MSME_Loans": {
                 "MainHead": "WHY OPT FOR RUDRAA FINANCE MSME LOANS?",
                 "SubHead": "Discover the compelling reasons to choose Rudraa Finance when it comes to securing a MSME loan.",
                 "repayment": false,

@@ -35,9 +35,7 @@ const Navbar = (props) => {
     scrollToTop();
   };
 
-  /**
-   * Mobile nav dropdowns activate
-   */
+
   const handleNavDropDown = (e) => {
     e.preventDefault();
     let navbar = document.getElementById("navbar");
@@ -45,64 +43,56 @@ const Navbar = (props) => {
 
     if (navbar.classList.contains("navbar-mobile")) {
       e.preventDefault();
+      const elementsWithClass = document.querySelectorAll(".navbar ul .dropdown ul .dropdown-active");
+
+      // Remove the "dropdown-active" class from all elements
+      elementsWithClass.forEach((el) => {
+        el.classList.remove("dropdown-active");
+      });
       selectedElement.nextElementSibling.classList.toggle("dropdown-active");
     }
 
     // return true;
   };
-  const handleNavDeepDropDown = (e) => {
-    let navbar = document.getElementById("navbar");
-    let selectedElement = document.querySelector(
-      ".navbar .dropdown ul .dropdown > a"
-    );
-    if (navbar.classList.contains("navbar-mobile")) {
-      e.preventDefault();
-      selectedElement.nextElementSibling.classList.toggle("dropdown-active");
-    }
-    // return true;
-  };
 
-  // Use the currentLocation prop to determine active navigation item
   const isActive = (path) => {
-   
-    console.log("path",  props.currentLocation);
     if (path === props.currentLocation) {
       return true;
-    }else if(path === "/product" &&  props.currentLocation.search(/\/$|\/about$|\/partner$/)==-1){
+    } else if (path === "/product" && props.currentLocation.search(/\/$|\/about$|\/partner$/) == -1) {
       return true
     }
-     else {
+    else {
       return false;
     }
   };
 
-  const hanleTopBar = ()=>{
+  const hanleTopBar = () => {
     const selectHeader = document.getElementById('header');
     const selectTopbar = document.getElementById('topbar');
-    if(window.scrollY>100){
+    if (window.scrollY > 100) {
       selectHeader.classList.add('header-scrolled')
       selectTopbar.classList.add('topbar-scrolled')
-    }else{
+    } else {
       selectHeader.classList.remove('header-scrolled')
       selectTopbar.classList.remove('topbar-scrolled')
     }
   }
 
-    // useEffect for handling scroll
-    useEffect(() => {
-      const handleScroll = () => {
-        setScrollY(window.scrollY);
-      };
-      window.addEventListener('scroll', handleScroll);
-  
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, []);
-
-    // useEffect for hiding the top bar when scrollY > 100
+  // useEffect for handling scroll
   useEffect(() => {
-      hanleTopBar();
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  // useEffect for hiding the top bar when scrollY > 100
+  useEffect(() => {
+    hanleTopBar();
   }, [scrollY]);
 
   return (
@@ -116,9 +106,9 @@ const Navbar = (props) => {
             <i className="bi bi-phone"></i>  <a href="tel:+919824469577">+91 9824469577</a>
           </div>
           <div className="d-none d-lg-flex social-links align-items-center">
-          <strong style={{fontSize:'smaller'}}>WhatsApp Support</strong>
-            <Link to="https://api.whatsapp.com/send?phone=9824469577"  target="_blank" rel="noopener noreferrer" className="whatsapp">
-            <i class="fab fa-whatsapp fa-lg"></i>
+            <strong style={{ fontSize: 'smaller' }}>WhatsApp Support</strong>
+            <Link to="https://api.whatsapp.com/send?phone=9824469577" target="_blank" rel="noopener noreferrer" className="whatsapp">
+              <i className="fab fa-whatsapp fa-lg"></i>
             </Link>
           </div>
         </div>
@@ -147,59 +137,56 @@ const Navbar = (props) => {
           </div>
 
           <nav id="navbar" className="navbar order-last order-lg-0">
-            <ul>
-              <li>
-                <Link
-                  onClick={exitNavbar}
-                  className={`nav-link scrollto ${
-                    isActive("/") ? "active" : ""
-                  }`}
-                  to="/"
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  onClick={exitNavbar}
-                  className={`nav-link scrollto ${
-                    isActive("/about") ? "active" : ""
-                  }`}
-                  to="/about"
-                >
-                  About Us
-                </Link>
-              </li>
+              <ul>
+                <li>
+                  <Link
+                    onClick={exitNavbar}
+                    className={`nav-link scrollto ${isActive("/") ? "active" : ""
+                      }`}
+                    to="/"
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    onClick={exitNavbar}
+                    className={`nav-link scrollto ${isActive("/about") ? "active" : ""
+                      }`}
+                    to="/about"
+                  >
+                    About Us
+                  </Link>
+                </li>
 
-              <li className="dropdown">
-                <a
-                  onClick={(e) => handleNavDropDown(e)}
-                  className={`nav-link scrollto ${
-                    isActive("/product") ? "active" : ""
-                  }`}
-                  style={{ cursor: "default" }}
-                >
-                  <span>Products</span> <i className="bi bi-chevron-down"></i>
-                </a>
-                <ul>
-                  {props.productsArray.map((ele, idx) => {
-                    return <Dropdown key={idx} element={ele} />;
-                  })}
-                </ul>
-              </li>
-            </ul>
-            <i className="bi bi-list mobile-nav-toggle" onClick={mobileNav}></i>
-          </nav>
+                <li className="dropdown">
+                  <a
+                    onClick={(e) => handleNavDropDown(e)}
+                    className={`nav-link scrollto ${isActive("/product") ? "active" : ""
+                      }`}
+                    style={{ cursor: "default" }}
+                  >
+                    <span>Products</span> <i className="bi bi-chevron-down"></i>
+                  </a>
+                  <ul>
+                    {props.productsArray.map((ele, idx) => {
+                      return <Dropdown key={idx} element={ele} />;
+                    })}
+                  </ul>
+                </li>
+              </ul>
+              <i className="bi bi-list mobile-nav-toggle" onClick={mobileNav}></i>
+            </nav>  <b>
+              <Link
+                to="/partner"
+                className="appointment-btn scrollto"
+                onClick={scrollToTop}
+              >
+                <span className="d-none d-md-inline">Become Our</span> Partner
+              </Link>
+            </b>
 
-          <b>
-            <Link
-              to="/partner"
-              className="appointment-btn scrollto"
-              onClick={scrollToTop}
-            >
-              <span className="d-none d-md-inline">Become Our</span> Partner
-            </Link>
-          </b>
+
         </div>
       </header>
     </>

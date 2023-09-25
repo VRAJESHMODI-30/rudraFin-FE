@@ -242,8 +242,7 @@ function App() {
     };
   }, []);
 
-  // Calculate the padding for the content based on the Navbar height
-  const contentPadding = `${navbarHeight + 40}px`; // Replace with your desired padding value
+  const contentPadding = `${navbarHeight + 40}px`;
 
   return (
     <>

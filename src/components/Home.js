@@ -1,10 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-// import '../styles/leaflet.css'; // Ensure Leaflet CSS is imported
-import Swiper from "swiper"; // Import Swiper library
+import Swiper from "swiper";
 import "../../node_modules/leaflet/dist/leaflet.css";
-import "../styles/Home.css"; // Import the CSS file
+import "../styles/Home.css";
 import "../../node_modules/swiper/swiper-bundle.min.css";
 import axios from "axios";
 import { toast, ToastContainer } from 'react-toastify';
@@ -16,6 +14,7 @@ const Home = () => {
   const phoneRef = useRef();
   const subjectRef = useRef();
   const messageRef = useRef();
+  // eslint-disable-next-line
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
@@ -79,6 +78,13 @@ const Home = () => {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <>
       <div>
@@ -114,7 +120,7 @@ const Home = () => {
                   of mind and confidence in your financial choices.
                 </p>
                 <div className="text-center">
-                  <Link to="/about" className="more-btn">
+                  <Link onClick={scrollToTop} to="/about" className="more-btn">
                     Learn More <i className="bx bx-chevron-right"></i>
                   </Link>
                 </div>

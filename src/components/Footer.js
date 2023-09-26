@@ -1,12 +1,10 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Footer.css";
-import axios from 'axios';
+import axios from "axios";
 // eslint-disable-next-line
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import privacyPolicyPDF from "../assets/Documents/Privacy_Policy.pdf";
-// import termsPolicyPDF from '../assets/Documents/';
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function Footer(props) {
   const emailRef = useRef();
@@ -19,33 +17,33 @@ function Footer(props) {
 
   const downloadFile = (pdfName) => {
     if (pdfName === "privacyPolicy") {
-      fetch(privacyPolicyPDF).then((response) => {
-        response.blob().then((blob) => {
-          // Creating new object of PDF file
+      fetch("https://www.rudraafinservices.com/assets/Privacy_Policy.pdf")
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error("Network response was not ok");
+          }
+          return response.blob();
+        })
+        .then((blob) => {
+          // Creating a new object URL for the PDF file
           const fileURL = window.URL.createObjectURL(blob);
-          // Setting various property values
+
+          // Creating an <a> element to trigger the download
           let alink = document.createElement("a");
           alink.href = fileURL;
-          alink.download = "Rudraa-FinServ-Privacy Policy.pdf";
+          alink.download = "Rudraa Fin Services PrivacyPolicy.pdf";
           alink.click();
+
+          // Revoke the object URL to free up memory
+          window.URL.revokeObjectURL(fileURL);
+        })
+        .catch((error) => {
+          console.error("Fetch error:", error);
         });
-      });
     }
-    // else if (pdfName == 'termsPolicy') {
-    //     fetch(termsPolicyPDF).then(response => {
-    //         response.blob().then(blob => {
-    //             // Creating new object of PDF file
-    //             const fileURL = window.URL.createObjectURL(blob);
-    //             // Setting various property values
-    //             let alink = document.createElement('a');
-    //             alink.href = fileURL;
-    //             alink.download = 'Rudraa-FinServ-Terms of Service.pdf';
-    //             alink.click();
-    //         })
-    //     })
-    // }
+    // Add more conditions for other PDFs if needed
     else {
-      console.log("NOTHING");
+      console.log("PDF not found or specified.");
     }
   };
 
@@ -54,16 +52,20 @@ function Footer(props) {
 
     try {
       const formData = new FormData();
-      formData.append('email', emailRef.current.value);
+      formData.append("email", emailRef.current.value);
 
-      const response = await axios.post(process.env.REACT_APP_API_URL+route, formData, {
-        headers: {
-          'Content-Type': 'application/json', // Set the appropriate Content-Type
-        },
-      });
+      const response = await axios.post(
+        process.env.REACT_APP_API_URL + route,
+        formData,
+        {
+          headers: {
+            "Content-Type": "application/json", // Set the appropriate Content-Type
+          },
+        }
+      );
 
       if (response.status === 200) {
-        emailRef.current.value = '';
+        emailRef.current.value = "";
         toast.success("Subscription successful. Thank you!");
       }
     } catch (error) {
@@ -116,13 +118,23 @@ function Footer(props) {
                 </li>
                 {/* <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="#">Terms of service</Link>
+                  <a
+                    target="_blank"
+                    href="https://www.rudraafinservices.com/assets/Rudraa Fin Services Terms of service.pdf"
+                    download="Rudraa Fin Services Terms of service.pdf"
+                  >
+                    Terms of service
+                  </a>
                 </li> */}
                 <li>
                   <i className="bx bx-chevron-right"></i>{" "}
-                  <Link to="#" onClick={() => downloadFile("privacyPolicy")}>
-                    Privacy policy
-                  </Link>
+                  <a
+                    target="_blank"
+                    href="https://www.rudraafinservices.com/assets/Rudraa Fin Services Privacy Policy.pdf"
+                    download="Rudraa Fin Services Privacy Policy.pdf"
+                  >
+                    Privacy Policy
+                  </a>
                 </li>
               </ul>
             </div>
@@ -151,15 +163,24 @@ function Footer(props) {
             <div className="col-lg-4 col-md-6 footer-newsletter">
               <h4>Join Our Newsletter</h4>
               <p>Stay Informed and Empowered</p>
-              <form onSubmit={(e)=>{sendRequest('/newsletter',e)}}>
-                <input className="rounded-pill" ref={emailRef} type="email" name="email" />
+              <form
+                onSubmit={(e) => {
+                  sendRequest("/newsletter", e);
+                }}
+              >
+                <input
+                  className="rounded-pill"
+                  ref={emailRef}
+                  type="email"
+                  name="email"
+                />
                 <input type="submit" value="Subscribe" />
               </form>
             </div>
           </div>
         </div>
       </div>
-    <div className="container d-md-flex py-4">
+      <div className="container d-md-flex py-4">
         <div className="me-md-auto text-center text-md-start">
           <div className="copyright">
             &copy; Copyright{" "}

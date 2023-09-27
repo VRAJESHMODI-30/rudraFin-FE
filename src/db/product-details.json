@@ -98,25 +98,33 @@
                 "RequiredDocuments": [
                     {
                         "KYC documents": [
-                            "PAN Card",
-                            "Aadhaar Card",
                             "Passport",
-                            "Proof of residence (in India and abroad)"
+                            "Visa",
+                            "Overseas Address Proof (such as utility bills or rental agreement)",
+                            "PAN Card (Permanent Account Number)",
+                            "Overseas Bank Account Statements (for the last 6-12 months)"
                         ]
                     },
                     {
                         "Income documents": [
-                            "Salary slips and Form No.16 (for salaried NRIs)",
-                            "Bank statements for the last 6 to 12 months (NRE/NRO account)",
-                            "Last 3 years income tax returns (if applicable)"
+                            "Salary slips or certificate from the employer (for salaried individuals)",
+                            "Profit and Loss statement and Balance Sheet (for self-employed individuals)",
+                            "NRE/NRO bank account statements (for the last 6-12 months)",
+                            "Income Tax Returns (ITR) for the last 2-3 years",
+                            "Employment Contract or Job Offer Letter (if applicable)",
+                            "Repayment Track Record (if applicable)",
+                            "Credit Report"
                         ]
                     },
                     {
-                        "Property Documents (if property is identified)": [
-                            "Proof of ownership of the property",
-                            "Sale agreement",
-                            "Property valuation report",
-                            "Approved building plan"
+                        "Other Documents": [
+                            "Property Documents (Sale deed, Title deed, Khata certificate and extract, Approved building plan, Occupancy certificate, Property tax receipts)",
+                            "Power of Attorney (POA)",
+                            "Bank Statements (NRE/NRO accounts for the last 6-12 months)",
+                            "Property Valuation Report",
+                            "Legal and Technical Documents (due diligence reports on the property)",
+                            "Photographs",
+                            "Application Form"
                         ]
                     }
                 ],
@@ -237,7 +245,7 @@
                         ]
                     }
                 ]
-            },                        
+            },
             "Loan_Against_Property": {
                 "MainHead": "WHY OPT FOR RUDRAA FINANCE LAP?",
                 "SubHead": "Discover the compelling reasons to choose Rudraa Finance when it comes to securing a LAP.",
@@ -248,7 +256,7 @@
                     "@list@Tailored Financial Solutions: Whether you're a salaried individual, a self-employed professional, or an NRI, we have tailored solutions to meet your unique needs.",
                     "@list@Unlock Your Property's Potential: Your property can serve as a valuable resource to fund various goals, from business expansion to education expenses, debt consolidation, and more.",
                     "@italic@At Rudraa Finance Services, we believe in putting you in control. Our Loan Against Property products are highly customizable to ensure they align perfectly with your eligibility and requirements. So, leverage the power of your property and take a step closer to achieving your financial aspirations with Rudraa Finance Services. Your goals, our solutions – together, we can make it happen."
-                ],                
+                ],
                 "RequiredDocuments": [
                     {
                         "KYC documents": [
@@ -298,7 +306,7 @@
                     "Documentation requirements",
                     "fas fa-hand-holding-usd",
                     "Processing fees and charges"
-                ],                
+                ],
                 "additionalDetailsArray": [
                     {
                         "heading": "Purpose (Loan against Mortgage of Residential House / Flat)",
@@ -363,7 +371,7 @@
                     "Amongst the lowest rate of interest",
                     "fas fa-user",
                     "Available for both existing and new customers"
-                ],                
+                ],
                 "repaymentArray": [
                     {
                         "cost": "Up to Rs. 30 lakh",
@@ -428,8 +436,7 @@
                     "Amongst the lowest rate of interest",
                     "fas fa-users",
                     "Available for both existing and new customers"
-                ]
-                ,
+                ],
                 "repaymentArray": [
                     {
                         "cost": "Up to Rs. 30 lakh",
@@ -494,8 +501,7 @@
                     "Amongst the lowest rate of interest",
                     "fas fa-exchange-alt",
                     "Takeover or balance transfer available"
-                ]
-                ,
+                ],
                 "additionalDetailsArray": [
                     {
                         "heading": "Purpose",
@@ -542,25 +548,37 @@
                 ],
                 "RequiredDocuments": [
                     {
-                        "KYC documents": [
-                            "PAN Card",
-                            "Aadhaar Card",
-                            "Passport (for NRIs)",
-                            "Proof of residence"
+                        "Business Registration and Identity Documents": [
+                            "Business Entity Proof (Certificate of Incorporation, Partnership Deed, etc.)",
+                            "MSME Registration Certificate (if applicable)",
+                            "PAN Card of the business entity",
+                            "Aadhar Card of the business owner(s) or partners",
+                            "Voter ID/Passport/Driver's License of the business owner(s) or partners"
                         ]
                     },
                     {
-                        "Income documents": [
-                            "Salary slips and Form No.16 (for salaried)",
-                            "Bank statements for the last 6 to 12 months",
-                            "Last 3 years income tax returns along with financials (for self-employed or professionals)"
+                        "Financial and Taxation Documents": [
+                            "Bank Statements (last 6-12 months)",
+                            "Audited Financial Statements (income statements, balance sheets, cash flow statements, if available)",
+                            "Income Tax Returns (ITR) for the business and personal ITRs (last 2-3 years)",
+                            "Goods and Services Tax (GST) Returns (if applicable)",
+                            "Loan Statements (if existing loans are present)"
                         ]
                     },
                     {
-                        "Property Documents (if property is identified)": [
-                            "Proof of ownership of the property",
-                            "Allotment letter of builder/society (for flats)",
-                            "Up-to-date tax paid receipt"
+                        "Loan Application and Purpose Documents": [
+                            "Loan Application Form",
+                            "Business Plan or Project Report",
+                            "Collateral Documents (if applying for a secured loan)",
+                            "Legal Documents (relevant agreements or contracts)",
+                            "KYC Documents for all business owners or partners"
+                        ]
+                    },
+                    {
+                        "Miscellaneous Documents (if applicable)": [
+                            "Bank loan statements and repayment track record",
+                            "Trade references",
+                            "Proof of ownership of business premises or property"
                         ]
                     }
                 ],
@@ -573,8 +591,7 @@
                     "Competitive interest rates",
                     "fas fa-users",
                     "For new & existing businesses"
-                ]
-                ,
+                ],
                 "additionalDetailsArray": [
                     {
                         "heading": "To be eligible for an MSME loan, you must meet the following criteria",
@@ -619,25 +636,25 @@
                 ],
                 "RequiredDocuments": [
                     {
-                        "KYC documents": [
-                            "PAN Card",
-                            "Aadhaar Card",
-                            "Passport (for NRIs)",
-                            "Proof of residence"
+                        "Business and Project Documentation": [
+                            "Business Plan and Project Report",
+                            "Financial Documents (audited statements, cash flow projections, cost estimates, etc.)",
+                            "Legal and Regulatory Documents (business registration, land title, licenses, permits, etc.)",
+                            "Technical Documents (equipment specifications, manufacturing process details)",
+                            "Personal and KYC Documents (directors' or promoters' KYC, personal financials)",
+                            "Business Track Record (if applicable)",
+                            "Insurance Documents (if applicable)"
                         ]
                     },
                     {
-                        "Income documents": [
-                            "Salary slips and Form No.16 (for salaried)",
-                            "Bank statements for the last 6 to 12 months",
-                            "Last 3 years income tax returns along with financials (for self-employed or professionals)"
+                        "Collateral Documentation (if applicable)": [
+                            "Collateral-related documents (property documents, land records, asset valuations, etc.)"
                         ]
                     },
                     {
-                        "Property Documents (if property is identified)": [
-                            "Proof of ownership of the property",
-                            "Allotment letter of builder/society (for flats)",
-                            "Up-to-date tax paid receipt"
+                        "Loan Application and Miscellaneous Documents": [
+                            "Loan Application Form",
+                            "Any other specific documents required by the lender based on their policies and your application."
                         ]
                     }
                 ],
@@ -652,8 +669,7 @@
                     "For new & existing businesses",
                     "fas fa-shield-alt",
                     "Secured or unsecured options"
-                ]
-                ,
+                ],
                 "additionalDetailsArray": [
                     {
                         "heading": "To be eligible for an MSME loan, you must meet the following criteria",
@@ -710,25 +726,25 @@
                 ],
                 "RequiredDocuments": [
                     {
-                        "KYC documents": [
-                            "PAN Card",
-                            "Aadhaar Card",
-                            "Passport (for NRIs)",
-                            "Proof of residence"
+                        "Business and Project Documentation": [
+                            "Business Plan and Project Report",
+                            "Financial Documents (audited statements, cash flow projections, cost estimates, etc.)",
+                            "Legal and Regulatory Documents (business registration, land title, licenses, permits, etc.)",
+                            "Technical Documents (equipment specifications, manufacturing process details)",
+                            "Personal and KYC Documents (directors' or promoters' KYC, personal financials)",
+                            "Business Track Record (if applicable)",
+                            "Insurance Documents (if applicable)"
                         ]
                     },
                     {
-                        "Income documents": [
-                            "Salary slips and Form No.16 (for salaried)",
-                            "Bank statements for the last 6 to 12 months",
-                            "Last 3 years income tax returns along with financials (for self-employed or professionals)"
+                        "Collateral Documentation (if applicable)": [
+                            "Collateral-related documents (property documents, land records, asset valuations, etc.)"
                         ]
                     },
                     {
-                        "Property Documents (if property is identified)": [
-                            "Proof of ownership of the property",
-                            "Allotment letter of builder/society (for flats)",
-                            "Up-to-date tax paid receipt"
+                        "Loan Application and Miscellaneous Documents": [
+                            "Loan Application Form",
+                            "Any other specific documents required by the lender based on their policies and your application."
                         ]
                     }
                 ],
@@ -741,8 +757,7 @@
                     "Repayment from project cash flows",
                     "fas fa-tree",
                     "For greenfield & brownfield projects"
-                ]
-                ,
+                ],
                 "additionalDetailsArray": [
                     {
                         "heading": "To be eligible for an MSME loan, you must meet the following criteria",
@@ -808,24 +823,33 @@
                 "RequiredDocuments": [
                     {
                         "KYC documents": [
+                            "Photocopy of Passport or National ID",
+                            "Bank Account Statement",
                             "PAN Card",
-                            "Aadhaar Card",
-                            "Passport (for NRIs)",
-                            "Proof of residence"
+                            "Tax Identification Number (TIN)"
                         ]
                     },
                     {
-                        "Income documents": [
-                            "Salary slips and Form No.16 (for salaried)",
-                            "Bank statements for the last 6 to 12 months",
-                            "Last 3 years income tax returns along with financials (for self-employed or professionals)"
+                        "Investment-Specific Documents": [
+                            "Stock Trading Account",
+                            "Mutual Fund Account",
+                            "Demat Account",
+                            "Fixed Deposit Receipt (FDR)",
+                            "Real Estate Deeds",
+                            "Precious Metals Purchase Receipts"
                         ]
                     },
                     {
-                        "Property Documents (if property is identified)": [
-                            "Proof of ownership of the property",
-                            "Allotment letter of builder/society (for flats)",
-                            "Up-to-date tax paid receipt"
+                        "Legal and Agreements": [
+                            "Investment Agreements and Contracts",
+                            "Power of Attorney Documents",
+                            "Utility Bills or Rental Agreements (Address Proof)",
+                            "Passport-Sized Photographs"
+                        ]
+                    },
+                    {
+                        "Tax and Financial Proof (if applicable)": [
+                            "Income Tax Returns (ITR)"
                         ]
                     }
                 ],
@@ -838,8 +862,7 @@
                     "Liquidity",
                     "fas fa-dollar-sign",
                     "Tax benefits"
-                ]
-                ,
+                ],
                 "additionalDetailsArray": [
                     {
                         "heading": "Types of deposits",
@@ -903,24 +926,33 @@
                 "RequiredDocuments": [
                     {
                         "KYC documents": [
+                            "Photocopy of Passport or National ID",
+                            "Bank Account Statement",
                             "PAN Card",
-                            "Aadhaar Card",
-                            "Passport (for NRIs)",
-                            "Proof of residence"
+                            "Tax Identification Number (TIN)"
                         ]
                     },
                     {
-                        "Income documents": [
-                            "Salary slips and Form No.16 (for salaried)",
-                            "Bank statements for the last 6 to 12 months",
-                            "Last 3 years income tax returns along with financials (for self-employed or professionals)"
+                        "Investment-Specific Documents": [
+                            "Stock Trading Account",
+                            "Mutual Fund Account",
+                            "Demat Account",
+                            "Fixed Deposit Receipt (FDR)",
+                            "Real Estate Deeds",
+                            "Precious Metals Purchase Receipts"
                         ]
                     },
                     {
-                        "Property Documents (if property is identified)": [
-                            "Proof of ownership of the property",
-                            "Allotment letter of builder/society (for flats)",
-                            "Up-to-date tax paid receipt"
+                        "Legal and Agreements": [
+                            "Investment Agreements and Contracts",
+                            "Power of Attorney Documents",
+                            "Utility Bills or Rental Agreements (Address Proof)",
+                            "Passport-Sized Photographs"
+                        ]
+                    },
+                    {
+                        "Tax and Financial Proof (if applicable)": [
+                            "Income Tax Returns (ITR)"
                         ]
                     }
                 ],
@@ -931,8 +963,7 @@
                     "Provides peace of mind",
                     "fas fa-dollar-sign",
                     "Offers tax benefits"
-                ]
-                ,
+                ],
                 "additionalDetailsArray": [
                     {
                         "heading": "Types of insurance investments",
@@ -995,24 +1026,33 @@
                 "RequiredDocuments": [
                     {
                         "KYC documents": [
+                            "Photocopy of Passport or National ID",
+                            "Bank Account Statement",
                             "PAN Card",
-                            "Aadhaar Card",
-                            "Passport (for NRIs)",
-                            "Proof of residence"
+                            "Tax Identification Number (TIN)"
                         ]
                     },
                     {
-                        "Income documents": [
-                            "Salary slips and Form No.16 (for salaried)",
-                            "Bank statements for the last 6 to 12 months",
-                            "Last 3 years income tax returns along with financials (for self-employed or professionals)"
+                        "Investment-Specific Documents": [
+                            "Stock Trading Account",
+                            "Mutual Fund Account",
+                            "Demat Account",
+                            "Fixed Deposit Receipt (FDR)",
+                            "Real Estate Deeds",
+                            "Precious Metals Purchase Receipts"
                         ]
                     },
                     {
-                        "Property Documents (if property is identified)": [
-                            "Proof of ownership of the property",
-                            "Allotment letter of builder/society (for flats)",
-                            "Up-to-date tax paid receipt"
+                        "Legal and Agreements": [
+                            "Investment Agreements and Contracts",
+                            "Power of Attorney Documents",
+                            "Utility Bills or Rental Agreements (Address Proof)",
+                            "Passport-Sized Photographs"
+                        ]
+                    },
+                    {
+                        "Tax and Financial Proof (if applicable)": [
+                            "Income Tax Returns (ITR)"
                         ]
                     }
                 ],
@@ -1097,25 +1137,14 @@
                 ],
                 "RequiredDocuments": [
                     {
-                        "KYC documents": [
-                            "PAN Card",
-                            "Aadhaar Card",
-                            "Passport (for NRIs)",
-                            "Proof of residence"
-                        ]
-                    },
-                    {
-                        "Income documents": [
-                            "Salary slips and Form No.16 (for salaried)",
-                            "Bank statements for the last 6 to 12 months",
-                            "Last 3 years income tax returns along with financials (for self-employed or professionals)"
-                        ]
-                    },
-                    {
-                        "Property Documents (if property is identified)": [
-                            "Proof of ownership of the property",
-                            "Allotment letter of builder/society (for flats)",
-                            "Up-to-date tax paid receipt"
+                        "Lis of Documents": [
+                            "Proof of Identity (e.g., Passport, Driver's License, Aadhar Card)",
+                            "Proof of Address (e.g., Utility Bill, Rental Agreement)",
+                            "Proof of Income (e.g., Salary Slips, Bank Statements, Income Tax Returns)",
+                            "Employment Verification (Employment Certificate, Offer Letter)",
+                            "Credit Score Report",
+                            "Loan Application Form",
+                            "Passport-sized Photographs"
                         ]
                     }
                 ],
@@ -1178,29 +1207,17 @@
                     "@list@Versatile Vehicle Financing: Whether you're eyeing a sleek new car, a rugged SUV, or a two-wheeler to navigate city streets, our Vehicle Loans offer flexible and tailored financing options. We cater to a wide range of customers, whether you're a first-time buyer, upgrading your vehicle, or adding a new member to your automotive fleet.",
                     "@list@Competitive Rates and Support: With competitive interest rates, quick approvals, and convenient repayment plans, Rudraa Finance Services ensures that you can drive away in your dream vehicle without breaking the bank. Our dedicated team is here to assist you every step of the way, from the application process to the moment you take the keys.",
                     "@italic@At Rudraa Finance Services, we believe that owning your vehicle should be an enjoyable and hassle-free experience. Let us be your financial partner as you hit the road to adventure and convenience. Your automotive dreams, powered by Rudraa Finance Services."
-                ]
-                ,
+                ],
                 "RequiredDocuments": [
                     {
-                        "KYC documents": [
-                            "PAN Card",
-                            "Aadhaar Card",
-                            "Passport (for NRIs)",
-                            "Proof of residence"
-                        ]
-                    },
-                    {
-                        "Income documents": [
-                            "Salary slips and Form No.16 (for salaried)",
-                            "Bank statements for the last 6 to 12 months",
-                            "Last 3 years income tax returns along with financials (for self-employed or professionals)"
-                        ]
-                    },
-                    {
-                        "Property Documents (if property is identified)": [
-                            "Proof of ownership of the property",
-                            "Allotment letter of builder/society (for flats)",
-                            "Up-to-date tax paid receipt"
+                        "List of Documents": [
+                            "Proof of Identity",
+                            "Proof of Address",
+                            "Proof of Income",
+                            "Vehicle Documents (e.g., RC Book, Insurance Papers)",
+                            "Loan Application Form",
+                            "Passport-sized Photographs",
+                            "Collateral Documents (if applicable)"
                         ]
                     }
                 ],
@@ -1213,8 +1230,7 @@
                     "Fixed monthly installments",
                     "fas fa-trophy",
                     "Competitive interest rates"
-                ]
-                ,
+                ],
                 "additionalDetailsArray": [
                     {
                         "heading": "To be eligible for a vehicle loan, you must meet the following criteria",
@@ -1272,25 +1288,13 @@
                 ],
                 "RequiredDocuments": [
                     {
-                        "KYC documents": [
-                            "PAN Card",
-                            "Aadhaar Card",
-                            "Passport (for NRIs)",
-                            "Proof of residence"
-                        ]
-                    },
-                    {
-                        "Income documents": [
-                            "Salary slips and Form No.16 (for salaried)",
-                            "Bank statements for the last 6 to 12 months",
-                            "Last 3 years income tax returns along with financials (for self-employed or professionals)"
-                        ]
-                    },
-                    {
-                        "Property Documents (if property is identified)": [
-                            "Proof of ownership of the property",
-                            "Allotment letter of builder/society (for flats)",
-                            "Up-to-date tax paid receipt"
+                        "List of Documents": [
+                            "Proof of Identity",
+                            "Proof of Address",
+                            "Proof of Income",
+                            "Loan Application Form",
+                            "Passport-sized Photographs",
+                            "Any specific documents related to the purchase (e.g., purchase order, invoice)"
                         ]
                     }
                 ],
@@ -1301,8 +1305,7 @@
                     "Flexible repayment terms",
                     "fas fa-percent",
                     "Variable interest rates"
-                ]
-                ,
+                ],
                 "additionalDetailsArray": [
                     {
                         "heading": "To be eligible for a consumer loan, you must meet the following criteria",
@@ -1355,25 +1358,14 @@
                 ],
                 "RequiredDocuments": [
                     {
-                        "KYC documents": [
-                            "PAN Card",
-                            "Aadhaar Card",
-                            "Passport (for NRIs)",
-                            "Proof of residence"
-                        ]
-                    },
-                    {
-                        "Income documents": [
-                            "Salary slips and Form No.16 (for salaried)",
-                            "Bank statements for the last 6 to 12 months",
-                            "Last 3 years income tax returns along with financials (for self-employed or professionals)"
-                        ]
-                    },
-                    {
-                        "Property Documents (if property is identified)": [
-                            "Proof of ownership of the property",
-                            "Allotment letter of builder/society (for flats)",
-                            "Up-to-date tax paid receipt"
+                        "List of Documents": [
+                            "Proof of Identity",
+                            "Proof of Address",
+                            "Proof of Admission to Educational Institution",
+                            "Academic Records (Marksheets, Certificates)",
+                            "Cost Estimate of Educational Expenses",
+                            "Loan Application Form",
+                            "Passport-sized Photographs"
                         ]
                     }
                 ],
@@ -1441,23 +1433,14 @@
                 ],
                 "RequiredDocuments": [
                     {
-                        "KYC documents": [
-                            "PAN Card",
-                            "Aadhaar Card",
-                            "Proof of residence"
-                        ]
-                    },
-                    {
-                        "Income documents": [
-                            "Rental agreement and income proof",
-                            "Bank statements for the last 6 to 12 months"
-                        ]
-                    },
-                    {
-                        "Property Documents (if property is identified)": [
-                            "Proof of ownership of the property",
-                            "Property valuation report",
-                            "Approved building plan"
+                        "List of Documents": [
+                            "Rental Agreement",
+                            "Proof of Identity of Tenant",
+                            "Proof of Address of Tenant",
+                            "Proof of Income of Tenant",
+                            "Loan Application Form",
+                            "Passport-sized Photographs",
+                            "Other documents as required by the lender"
                         ]
                     }
                 ],
@@ -1644,8 +1627,6 @@
                     }
                 ]
             }
-            
-            
         }
     },
     {
@@ -1666,18 +1647,32 @@
                 ],
                 "RequiredDocuments": [
                     {
-                        "KYC documents": [
-                            "PAN Card",
-                            "Aadhaar Card",
-                            "Proof of residence"
+                        "Business and Entity Documents": [
+                            "Proof of Business Registration (e.g., Certificate of Incorporation, Partnership Deed, Sole Proprietorship Registration)",
+                            "Memorandum and Articles of Association (for companies)",
+                            "Trade License (if applicable)"
                         ]
                     },
                     {
-                        "Business Documents": [
-                            "Business registration certificate",
-                            "Financial statements",
-                            "Bank statements",
-                            "Details of the business's current financial position"
+                        "Financial and Business Performance Documents": [
+                            "Audited Financial Statements (Income Statement, Balance Sheet, Cash Flow Statement)",
+                            "Bank Statements for the business account (last 6-12 months)",
+                            "Income Tax Returns (ITR) for the business (last 2-3 years)",
+                            "GST Returns (if applicable)",
+                            "Debtors and Creditors Statements",
+                            "Business Plan and Projected Financials",
+                            "Details of existing loans, if any",
+                            "Business track record"
+                        ]
+                    },
+                    {
+                        "KYC and Ownership Documents": [
+                            "Know Your Customer (KYC) documents of business owners or partners (copies of IDs, addresses, photographs)"
+                        ]
+                    },
+                    {
+                        "Security or Collateral Documents (if applicable)": [
+                            "Documents related to collateral or security offered for the loan, such as property documents, land titles, or asset valuations (if required)"
                         ]
                     }
                 ],
@@ -1722,11 +1717,9 @@
                     }
                 ]
             }
-            
         }
     },
     {
-        
         "NavHead": "Overdraft",
         "isDropDown": false,
         "NavbarDetails": "Overdraft",
@@ -1744,18 +1737,29 @@
                 ],
                 "RequiredDocuments": [
                     {
-                        "KYC documents": [
-                            "PAN Card",
-                            "Aadhaar Card",
-                            "Proof of residence"
+                        "Business Registration and Financial Documents": [
+                            "Proof of Business Registration (e.g., Certificate of Incorporation, Partnership Deed, Sole Proprietorship Registration)",
+                            "Memorandum and Articles of Association (for companies)",
+                            "Trade License (if applicable)",
+                            "Audited Financial Statements (Income Statement, Balance Sheet, Cash Flow Statement)",
+                            "Bank Statements for the business account (last 6-12 months)",
+                            "Income Tax Returns (ITR) for the business (last 2-3 years)",
+                            "GST Returns (if applicable)",
+                            "Debtors and Creditors Statements",
+                            "Business Plan and Utilization Plan"
                         ]
                     },
                     {
-                        "Business Documents": [
-                            "Business registration certificate",
-                            "Financial statements",
-                            "Bank statements",
-                            "Details of the business's current financial position"
+                        "KYC and Ownership Documents": [
+                            "Know Your Customer (KYC) documents of business owners or partners (copies of IDs, addresses, photographs)",
+                            "Details of existing loans, if any, along with loan statements and repayment records"
+                        ]
+                    },
+                    {
+                        "Legal and Regulatory Compliance": [
+                            "Compliance with all applicable legal and regulatory requirements",
+                            "Necessary licenses, permits, and approvals for your business operations",
+                            "Loan Application Form"
                         ]
                     }
                 ],
@@ -1800,7 +1804,6 @@
                     }
                 ]
             }
-            
         }
     }
 ]

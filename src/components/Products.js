@@ -103,7 +103,10 @@ function Products(props) {
       </section>
 
       {/* <!-- ======= Required Document/Why Us Section ======= --> */}
-      <section id="why-us-productPage" className="why-us-productPage section-bg">
+      <section
+        id="why-us-productPage"
+        className="why-us-productPage section-bg"
+      >
         <div className="container-fluid" data-aos="fade-up">
           <div className="row">
             <div className="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
@@ -125,7 +128,39 @@ function Products(props) {
 
               <div className="accordion-list">
                 <ul>
-                  <li>
+                  {props.product.RequiredDocuments.map((dataObj, idx) => {
+                    // Extract the key (document category) and the documents (array) from each dataObj
+                    const [key, documents] = Object.entries(dataObj)[0];
+
+                    return (
+                      <li key={idx}>
+                        <a
+                          data-bs-toggle="collapse"
+                          className="collapse"
+                          data-bs-target={`#accordion-list-${idx + 1}`}
+                        >
+                          <span>{idx + 1 < 10 ? `0${idx + 1}` : idx + 1}</span>
+                          {key} <i className="bx bx-chevron-down icon-show"></i>
+                          <i className="bx bx-chevron-up icon-close"></i>
+                        </a>
+                        <div
+                          id={`accordion-list-${idx + 1}`}
+                          className="collapse show"
+                          data-bs-parent=".accordion-list"
+                        >
+                          <ul className="docfeatures">
+                            {documents.map((document, documentIdx) => (
+                              <li key={documentIdx}>
+                                <i className="fas fa-check"></i> {document}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </li>
+                    );
+                  })}
+
+                  {/* <li>
                     <a
                       data-bs-toggle="collapse"
                       className="collapse"
@@ -155,9 +190,9 @@ function Products(props) {
                         </li>
                       </ul>
                     </div>
-                  </li>
+                  </li> */}
 
-                  <li>
+                  {/* <li>
                     <a
                       data-bs-toggle="collapse"
                       data-bs-target="#accordion-list-2"
@@ -220,7 +255,7 @@ function Products(props) {
                         </li>
                       </ul>
                     </div>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

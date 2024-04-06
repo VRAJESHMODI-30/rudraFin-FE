@@ -88,7 +88,7 @@ function Footer(props) {
                 <br />
                 India <br />
                 <br />
-                <strong>Phone:</strong> +91 9824469577 | 9824390727
+                <strong>Phone:</strong> +91 9824469577 | 9427639877
                 <br />
                 <strong>Email:</strong> info@rudraafinservices.com
                 <br />

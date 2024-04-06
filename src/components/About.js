@@ -25,7 +25,7 @@ const About = () => {
                 <ul>
                   <li><i className="bi bi-chevron-right"></i> <strong>Established:</strong> <span>Since 2007</span></li>
                   {/* <li><i className="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.rudraafinservices.com</span></li> */}
-                  <li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 9824469577<br/>+91 9824390727</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 9824469577<br/>+91 9427639877</span></li>
                   <li><i className="bi bi-chevron-right"></i> <strong>City:</strong> <span>Vadodara, Gujarat</span></li>
                 </ul>
               </div>

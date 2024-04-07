@@ -160,7 +160,7 @@ function Footer(props) {
               </ul>
             </div>
 
-            <div className="col-lg-4 col-md-6 footer-newsletter">
+            {/* <div className="col-lg-4 col-md-6 footer-newsletter">
               <h4>Join Our Newsletter</h4>
               <p>Stay Informed and Empowered</p>
               <form
@@ -176,7 +176,7 @@ function Footer(props) {
                 />
                 <input type="submit" value="Subscribe" />
               </form>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

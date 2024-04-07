@@ -1,0 +1,86 @@
+.bg-f1f7fd{
+    background-color: #f1f7fd !important;
+    border: 1px solid #f1f7fd;
+}
+
+.carousel-top {
+    width: 100%;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.carousel-top h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.carousel-top span {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    font-size: 17px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #6C757D;
+    margin-bottom: 45px;
+}
+
+.carousel-top div {
+    width: 40%;
+    border-top: 0.5px solid #6C757D;
+    margin: auto;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.carousel-bottom .logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: #f1f7fd;
+    white-space: nowrap;
+    position: relative;
+}
+
+.carousel-bottom .logos:before,
+.carousel-bottom .logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.carousel-bottom .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), #f1f7fd);
+}
+
+.carousel-bottom .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #f1f7fd);
+}
+
+.carousel-bottom .logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.carousel-bottom .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.carousel-bottom .logos-slide img {
+    height: 100px;
+    margin: 0 40px;
+}

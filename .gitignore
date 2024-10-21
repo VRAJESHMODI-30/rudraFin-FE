@@ -4,9 +4,9 @@
 /node_modules
 /.pnp
 .pnp.js
-*.jpg
-*.png
-*.mp4
+# *.jpg
+# *.png
+# *.mp4
 .env
 
 # testing
